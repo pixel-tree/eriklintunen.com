@@ -1,0 +1,13 @@
+MAIN.js
+
+* main container
+* metadata
+* sequencer function
+* clear function
+* navigation bar
+
+LOADER.js
+
+* load bundle.loader.js on page load (blur main elements).
+* Ajax request for bundle.main.js.
+* on complete => meta.content = 'about' + $.fade out loader + clear('loader') + sequencer()
