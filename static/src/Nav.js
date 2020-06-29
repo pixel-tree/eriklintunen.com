@@ -1,11 +1,6 @@
 /**
- * Navigation for eriklintunen.com;
- * pixel-tree, 2020.
+ * Navigation for eriklintunen.com.
  */
-
-// TO DO: four big boxes
-// => on hover press down with shadow + shade of gray (/low sat colour).
-// + dissipation of text (floating/hovering/turning and churning, etc.)
 
 import { clear, sequencer } from './Main.js'
 

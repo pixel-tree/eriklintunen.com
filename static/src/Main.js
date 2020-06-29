@@ -1,11 +1,11 @@
 /**
- * Main JS for eriklintunen.com;
+ * Main JS;
+ * eriklintunen.com;
  * pixel-tree, 2020.
  */
 
 import '../style/main.scss'
 
-import { Animations } from './Animate.js'
 import { Navigation } from './Nav.js'
 
 /**
@@ -19,23 +19,78 @@ meta.id = 'meta'
 document.head.appendChild(meta)
 
 /**
- * Initialise page (dev section at bottom of page).
+ * Initialise page.
  */
 
 const playground = document.createElement('div')
 playground.id = 'playground'
 document.body.appendChild(playground)
 
-const navigation = new Navigation(playground)
+const loader = document.createElement('div')
+loader.id = 'loader'
+playground.appendChild(loader)
 
-const animations = new Animations(playground)
+const navigation = new Navigation(playground)
 
 const content = document.createElement('div')
 content.id = 'content'
 playground.appendChild(content)
 
 if (env !== 'development') {
+
   sequencer()
+
+  /**
+   * Animations.
+   * (Automatically loaded in dev mode.)
+   */
+
+  var $ = require('jquery')
+  var URL = './build/animate.bundle.js'
+
+  $.ajax({
+    type: 'GET',
+    dataType: 'script',
+    url: URL,
+    cache: false,
+    xhr: function() {
+
+      var xhr = new window.XMLHttpRequest()
+
+      xhr.addEventListener('progress', function(event) {
+        if (event.lengthComputable) {
+          var perc = Math.round(event.loaded / event.total * 100)
+          loader.innerText = 'loading... ' + perc + '%'
+        }
+      }, false)
+
+      return xhr
+
+    },
+    success: function() {
+      $('#loader').text('initialising...')
+    },
+    error: function() {
+      $('#loader').text('loading animations failed.')
+    },
+    complete: function() {
+      $('#loader').text('')
+      $('#loader').hide()
+    }
+  })
+
+} else {
+
+  /**
+   * Dev mode.
+   * (Sequencer disabled.)
+   */
+
+  console.log('Development mode.')
+
+  // Module under development:
+  // new Module(container)
+
 }
 
 /**
@@ -75,19 +130,5 @@ function sequencer() {
   }
 
 }
-
-/**
- * Dev section.
- */
-
-if (env !== 'production') {
-  console.log('Development mode!')
-
-  // Module under development:
-  // new Module(container)
-
- }
-
-/* --------- */
 
 export { clear, sequencer }

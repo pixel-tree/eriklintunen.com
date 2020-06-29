@@ -1,9 +1,6 @@
 /**
- * Animations.
+ * Animations for eriklintunen.com.
  */
-
-// TO DO: clean up animation functions (especially P5).
-// TO DO: reduce animation sizes.
 
 class Animations {
 
@@ -17,6 +14,8 @@ class Animations {
     new Butterfly()
     new Cursor()
 
+    $('#cursor').insertBefore('#nav')
+
     /**
      * Functions.
      */
@@ -27,7 +26,6 @@ class Animations {
         var particles = []
 
         s.setup = () => {
-          s.noCursor()
           let canvas = s.createCanvas(900, 225)
           canvas.id('butterfly')
 
@@ -95,6 +93,7 @@ class Animations {
       }
 
       new p5(sketch, 'ol')
+
     }
 
     function Cursor() {
@@ -102,6 +101,8 @@ class Animations {
       const cursor = document.createElement('div')
       cursor.id = 'cursor'
       playground.appendChild(cursor)
+
+      $('#cursor').hide().fadeIn(1200)
 
       $('#playground').on('mousemove', (event) => {
         $('#cursor').css({
@@ -199,13 +200,15 @@ class Animations {
 
           }
 
+
+
         }
 
       new p5(sketch, 'cursor')
-    }
-  }
 
+    }
+
+  }
 }
 
-
-export { Animations }
+new Animations(playground)

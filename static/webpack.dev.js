@@ -1,6 +1,5 @@
 /**
- * Dev server configuration file;
- * pixel-tree, 2020.
+ * Dev server configuration file.
  */
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -17,9 +16,6 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
-  },
-  entry: {
-    main: './src/Main.js',
   },
   module: {
     rules: [

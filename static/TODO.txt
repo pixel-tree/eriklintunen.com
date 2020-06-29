@@ -1,12 +1,22 @@
 MAIN.js
 
-* main container
-* metadata
-* sequencer function
-* clear function
-* navigation bar
+*
 
-LOADER.js
+NAVIGATION.js
+
+* four transparent boxes
+* on hover => press down with shadow + shade of gray (/low sat colour).
+* on hover => dissipation of text(floating/hovering/turning and churning, etc.)
+
+ANIMATE.js
+
+* clean up functions (especially P5 sketches).
+* reduce animation sizes?
+* fade in animations.
+* generative creatures in playground DIV.
+* make sure that all animations have a shared colour palette.
+
+LOADER.js (not sure if needed anymore).
 
 * load bundle.loader.js on page load (blur main elements).
 * Ajax request for bundle.main.js.

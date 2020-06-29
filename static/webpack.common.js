@@ -1,11 +1,14 @@
 /**
- * Main webpack configuration file;
- * pixel-tree, 2020.
+ * Main webpack configuration file.
  */
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+  entry: {
+    main: './src/Main.js',
+    animate: './src/Animate.js',
+  },
   output: {
     path: __dirname+'/build',
     filename: '[name].bundle.js',
