@@ -31,36 +31,73 @@ $fontI: adItalic;
 	     url('../media/fonts/AD-Italic.ttf') format('truetype');
 }
 
-body, #container {
+body, #playground {
 	width: 100%;
 	height: 100%;
 	position: absolute;
+	margin: 0;
+	background-color: $white;
+	cursor: url('../media/objects/cursor.png'), auto;
+}
+
+/* Animations */
+
+#cursor {
+	width: 300px;
+	position: absolute;
+	transition-duration: 900ms;
+	transition-timing-function: ease;
+	transform: translate(-50%, -50%);
+	opacity: 60%;
+}
+
+#butterfly {
+	width: 900px;
+	position: absolute;
 	top: 0;
 	left: 0;
-	margin: 0;
-	background-color: $black;
-	cursor: url('../media/objects/cursor.png'), auto;
+	opacity: 12%;
 }
 
 /* Navigation */
 
 #nav {
-  width: 900px;
-  height: 300px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+	width: 900px;
+	height: 225px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#navSketch {
-	width: 300px;
-	position: absolute;
-	transition-duration: 1200ms;
-	transition-timing-function: ease;
-	transform: translate(-50%);
+ol {
+	list-style-type: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	width: 225px;
+	line-height: 225px;
+	float: left;
+	text-align: center;
+	font-family: $fontN;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 1.8px;
+	color: $black;
+	text-shadow: 0.9px 0.9px $gray;
 }
 
 /* Main container */
+
+#content {
+	width: 900px;
+	height: 600px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /* About */
 
