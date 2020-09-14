@@ -1,13 +1,12 @@
 /**
- * Main webpack configuration file.
+ * Webpack config file.
  */
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    main: './src/Main.js',
-    animate: './src/Animate.js',
+    main: './src/Main.js'
   },
   output: {
     path: __dirname+'/build',
@@ -43,7 +42,7 @@ module.exports = {
           'css-loader'],
       },
       {
-				test: /\.(png|gif|svg)$/,
+				test: /\.(jpg|png|gif|svg)$/,
 				loader: 'url-loader',
 			},
       {

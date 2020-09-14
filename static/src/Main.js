@@ -1,134 +1,67 @@
 /**
- * Main JS;
- * eriklintunen.com;
+ * Main JS for eriklintunen.com.
  * pixel-tree, 2020.
  */
 
 import '../style/main.scss'
 
-import { Navigation } from './Nav.js'
+import { sequencer } from './Utils'
+import { latest } from './Media'
 
-/**
- * Essential metadata.
- */
+import { Nav } from './Nav'
 
-var env = process.env.NODE_ENV
+/* Metadata */
 
-var meta = document.createElement('meta')
-meta.id = 'meta'
-document.head.appendChild(meta)
+let env = process.env.NODE_ENV
 
-/**
- * Initialise page.
- */
+let page = document.createElement('meta')
+page.id = 'page'
+document.head.appendChild(page)
+
+let sub = document.createElement('meta')
+sub.id = 'sub'
+document.head.appendChild(sub)
+
+page.content = 'contact' // Default load page
+
+/* Main frame */
 
 const playground = document.createElement('div')
 playground.id = 'playground'
 document.body.appendChild(playground)
 
-const loader = document.createElement('div')
-loader.id = 'loader'
-playground.appendChild(loader)
+/* Rotational content */
 
-const navigation = new Navigation(playground)
+const extLink = document.createElement('a')
+extLink.setAttribute('href', latest)
+extLink.id = 'extLink'
+extLink.innerText = '¯\\_(ツ)_/¯'
+playground.appendChild(extLink)
+
+/* Shared elements */
+
+const navigation = new Nav(playground)
 
 const content = document.createElement('div')
 content.id = 'content'
 playground.appendChild(content)
 
+const footer = document.createElement('div')
+footer.id = 'footer'
+footer.innerText = '© 2020 Erik Lintunen'
+playground.appendChild(footer)
+
+/* Initialise */
+
 if (env !== 'development') {
 
+  // animate()
   sequencer()
-
-  /**
-   * Animations.
-   * (Automatically loaded in dev mode.)
-   */
-
-  var $ = require('jquery')
-  var URL = './build/animate.bundle.js'
-
-  $.ajax({
-    type: 'GET',
-    dataType: 'script',
-    url: URL,
-    cache: false,
-    xhr: function() {
-
-      var xhr = new window.XMLHttpRequest()
-
-      xhr.addEventListener('progress', function(event) {
-        if (event.lengthComputable) {
-          var perc = Math.round(event.loaded / event.total * 100)
-          loader.innerText = 'loading... ' + perc + '%'
-        }
-      }, false)
-
-      return xhr
-
-    },
-    success: function() {
-      $('#loader').text('initialising...')
-    },
-    error: function() {
-      $('#loader').text('loading animations failed.')
-    },
-    complete: function() {
-      $('#loader').text('')
-      $('#loader').hide()
-    }
-  })
 
 } else {
 
-  /**
-   * Dev mode.
-   * (Sequencer disabled.)
-   */
-
   console.log('Development mode.')
 
-  // Module under development:
-  // new Module(container)
+  sequencer()
 
 }
-
-/**
- * Utilities.
- */
-
-// Clear element.
-function clear(elementID) {
-  document.getElementById(elementID).innerHTML = ''
-}
-
-// Sequencer (to determine content).
-function sequencer() {
-
-  // About.
-  if (meta.content === 'about') {
-    clear('content')
-    const about = new About(playground)
-  }
-
-  // Works.
-  else if (meta.content === 'works') {
-    clear('content')
-    const works = new Works(playground)
-  }
-
-  // Blog.
-  else if (meta.content === 'blog') {
-    clear('content')
-    const blog = new Blog(playground)
-  }
-
-  // Contact.
-  else if (meta.content === 'contact') {
-    clear('content')
-    const contact = new Contact(playground)
-  }
-
-}
-
-export { clear, sequencer }

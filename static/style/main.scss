@@ -1,16 +1,14 @@
-/**
- * SCSS for eriklintunen.com.
- */
-
-/* Shared */
+/* Variables */
 
 $black: rgb(0, 0, 0);
 $white: rgb(255, 255, 255);
-$gray: rgb(105, 105, 105);
+$grayA: rgba(169, 169, 169, 0.3);
 
-$fontN: adReg;
-$fontB: adBold;
-$fontI: adItalic;
+$N: adReg;
+$B: adBold;
+$I: adItalic;
+
+/* Fonts */
 
 @font-face {
 	font-family: adReg;
@@ -30,16 +28,153 @@ $fontI: adItalic;
 	     url('../media/fonts/AD-Italic.ttf') format('truetype');
 }
 
+/* Shared */
+
 body, #playground {
-	width: 100%;
-	height: 100%;
+	min-width: 100vw;
+	min-height: 100vh;
 	position: absolute;
 	margin: 0;
 	background-color: $white;
-	cursor: url('../media/objects/cursor.png'), auto;
 }
 
-/* Animations */
+#extLink {
+	position: absolute;
+	top: 0.6vh;
+	right: 1.5vw;
+	text-decoration: none;
+	font-family: $N;
+	font-size: 15px;
+	letter-spacing: 1.8px;
+	color: $black;
+	text-shadow: 0.9px 0.9px $grayA;
+	cursor: pointer;
+}
+
+#nav {
+	width: 600px;
+	height: 42px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 12vh;
+	margin-bottom: 4.5vh;
+}
+
+ol {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	font-family: $I;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1.5px;
+	color: $black;
+	text-shadow: 0.9px 0.9px $grayA;
+	cursor: pointer;
+}
+
+#content {
+	width: 600px;
+	height: 750px;
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	align-items: center;
+	justify-content: flex-start;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	p {
+		text-align: justify;
+		font-family: $N;
+		font-size: 13.5px;
+		letter-spacing: 0.9px;
+		color: $black;
+		text-shadow: 0.6px 0.6px $grayA;
+	}
+}
+
+#content::-webkit-scrollbar {
+	display: none;
+}
+#content {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+#footer {
+	width: 600px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 3vh;
+	font-family: $N;
+	font-size: 12px;
+	letter-spacing: 0.6px;
+	color: $black;
+	text-shadow: 0.3px 0.3px $grayA;
+}
+
+/* About */
+
+#neural {
+	width: 420px;
+	height: 420px;
+	order: 1;
+}
+
+#bio {
+	order: 2;
+	margin-top: 21px;
+}
+
+/* Works */
+
+#xd {
+	width: 600px;
+	order: 1;
+	margin-bottom: 1vh;
+	cursor: pointer;
+}
+
+#resume {
+	width: 600px;
+	order: 2;
+	cursor: pointer;
+}
+
+/* Blog */
+
+.categories {
+	width: 100%;
+	font-family: $N;
+	text-transform: uppercase;
+	font-size: 75px;
+	letter-spacing: 1.8px;
+	color: $black;
+	text-shadow: 0.9px 0.9px $grayA;
+	cursor: pointer;
+}
+
+/* Contact */
+
+#terminal {
+	width: 100%;
+	height: 100%;
+}
+
+/* Animate */
 
 #cursor {
 	width: 300px;
@@ -57,51 +192,3 @@ body, #playground {
 	left: 0;
 	opacity: 12%;
 }
-
-/* Navigation */
-
-#nav {
-	width: 900px;
-	height: 225px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-ol {
-	list-style-type: none;
-	position: relative;
-	margin: 0;
-	padding: 0;
-}
-
-li {
-	width: 225px;
-	line-height: 225px;
-	float: left;
-	text-align: center;
-	font-family: $fontN;
-	text-transform: uppercase;
-	font-size: 18px;
-	letter-spacing: 1.8px;
-	color: $black;
-	text-shadow: 0.9px 0.9px $gray;
-}
-
-/* Main container */
-
-#content {
-	width: 900px;
-	height: 600px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/* About */
-
-/* Works */
-
-/* Blog */
-
-/* Contact */

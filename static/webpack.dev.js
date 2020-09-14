@@ -1,5 +1,5 @@
 /**
- * Dev server configuration file.
+ * Dev server config file.
  */
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');

@@ -1,18 +1,18 @@
 /**
- * Navigation for eriklintunen.com.
+ * Navigation.
  */
 
-import { clear, sequencer } from './Main.js'
+import { clear, sequencer } from './Utils'
 
-class Navigation {
+class Nav {
   constructor(container) {
 
-    // Container.
+    // Frame.
     this._element = document.createElement('nav')
     this._element.id = 'nav'
     playground.appendChild(this._element)
 
-    // Array to store menu items.
+    // Menu items.
     const items = [
       'about',
       'works',
@@ -20,34 +20,29 @@ class Navigation {
       'contact'
     ]
 
-    /**
-     * Menu elements.
-     */
+    /* Elements */
 
     const ol = document.createElement('ol')
     ol.id = 'ol'
     this._element.appendChild(ol)
 
-    for (var i = 0; i < items.length; i++) {
+    for (let i = 0; i < items.length; i++) {
 
-      // Menu item.
       const li = document.createElement('li')
-      li.id = i
       li.innerText = items[i]
-      ol.appendChild(li)
 
-      // Display selected content.
-      document.getElementById(i).onclick = function() {
-        if (document.getElementById('meta').content !== this.innerHTML) {
-          document.getElementById('meta').content = this.innerHTML
-          clear('content')
+      li.onclick = function() {
+        if (document.getElementById('page').content !== this.innerHTML) {
+          document.getElementById('page').content = this.innerHTML
           sequencer()
         }
       }
+
+      ol.appendChild(li)
 
     }
 
   }
 }
 
-export { Navigation }
+export { Nav }

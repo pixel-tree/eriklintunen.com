@@ -1,6 +1,9 @@
 /**
- * Animations for eriklintunen.com.
+ * Animations.
  */
+
+
+
 
 class Animations {
 
@@ -16,7 +19,7 @@ class Animations {
 
     $('#cursor').insertBefore('#nav')
 
-    /**
+    /*
      * Functions.
      */
 

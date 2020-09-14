@@ -1,5 +1,5 @@
 /**
- * Production build configuration file.
+ * Production build config file.
  */
 
 const merge = require('webpack-merge');
