@@ -1,0 +1,24 @@
+{
+  "about": {
+    "id": "neural",
+    "path": "./media/visual/neural.gif"
+  },
+  "works": {
+    "xd": {
+      "id": "xd",
+      "path": "./media/visual/xd.jpg"
+    },
+    "xd_inv": {
+      "id": "xd_inv",
+      "path": "./media/visual/xd_inv.jpg"
+    },
+    "resume": {
+      "id": "resume",
+      "path": "./media/visual/resume.jpg"
+    },
+    "resume_inv": {
+      "id": "resume_inv",
+      "path": "./media/visual/resume_inv.jpg"
+    }
+  }
+}

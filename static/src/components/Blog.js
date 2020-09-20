@@ -2,10 +2,8 @@
  * Blog page.
  */
 
+import { text, visual } from '../Main'
 import { sequencer } from '../Utils'
-import {
-
-} from '../Media'
 
 class Blog {
   constructor(container) {

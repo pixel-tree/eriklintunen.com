@@ -81,8 +81,15 @@ class Contact {
             }
             if (phase === 4) {
               // send message
+              $.ajax( {
+                async: false,
+                url: '/send_message',
+                type: 'POST',
+                data: [name, address, message]
+                }).done(function(data) {
+                  console.log('message sent')
+              })
               // "thanks, etc."
-              console.log('message sent')
               sequencer()
             }
 

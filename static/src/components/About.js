@@ -2,14 +2,14 @@
  * About page.
  */
 
-import { neuralGIF, bioTXT } from '../Media'
+import { text, visual } from '../Main'
 
 class About {
   constructor(container) {
 
     // Image.
     const neural = document.createElement('img')
-    neural.src = neuralGIF
+    neural.src = visual.about.path
     neural.id = 'neural'
     content.appendChild(neural)
 
@@ -18,11 +18,9 @@ class About {
     bio.id = 'bio'
     content.appendChild(bio)
 
-    const bioText = bioTXT.split('\n')
-
-    for (let i = 0; i < bioText.length; i++) {
+    for (let i = 0; i < text.bio.length; i++) {
       const paragraph = document.createElement('p')
-      paragraph.innerText = bioText[i]
+      paragraph.innerText = text.bio[i]
       bio.appendChild(paragraph)
     }
 

@@ -2,35 +2,35 @@
  * Works page.
  */
 
+import { text, visual } from '../Main'
 import { sequencer } from '../Utils'
-import { xd0, xd1, resume0, resume1 } from '../Media'
 
 class Works {
   constructor(container) {
 
     // Images.
     const xd = document.createElement('img')
-    xd.src = xd0
+    xd.src = visual.works.xd.path
     xd.id = 'xd'
     content.appendChild(xd)
 
     const resume = document.createElement('img')
-    resume.src = resume0
+    resume.src = visual.works.resume.path
     resume.id = 'resume'
     content.appendChild(resume)
 
     let $ = require('jquery')
 
     $('#xd').hover(function() {
-      $(this).attr('src', xd1)
+      $(this).attr('src', visual.works.xd_inv.path)
     }, function() {
-      $(this).attr('src', xd0)
+      $(this).attr('src', visual.works.xd.path)
     })
 
     $('#resume').hover(function() {
-      $(this).attr('src', resume1)
+      $(this).attr('src', visual.works.resume_inv.path)
     }, function() {
-      $(this).attr('src', resume0)
+      $(this).attr('src', visual.works.resume.path)
     })
 
     xd.onclick = function() {

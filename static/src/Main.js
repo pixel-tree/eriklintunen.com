@@ -6,7 +6,6 @@
 import '../style/main.scss'
 
 import { sequencer } from './Utils'
-import { latest } from './Media'
 
 import { Nav } from './Nav'
 
@@ -18,11 +17,12 @@ let page = document.createElement('meta')
 page.id = 'page'
 document.head.appendChild(page)
 
-let sub = document.createElement('meta')
-sub.id = 'sub'
-document.head.appendChild(sub)
+page.content = 'about' // Default load page
 
-page.content = 'contact' // Default load page
+/* Load data */
+
+const text = require('../media/json/text.json')
+const visual = require('../media/json/visual.json')
 
 /* Main frame */
 
@@ -33,7 +33,7 @@ document.body.appendChild(playground)
 /* Rotational content */
 
 const extLink = document.createElement('a')
-extLink.setAttribute('href', latest)
+extLink.setAttribute('href', text.latest)
 extLink.id = 'extLink'
 extLink.innerText = '¯\\_(ツ)_/¯'
 playground.appendChild(extLink)
@@ -51,9 +51,18 @@ footer.id = 'footer'
 footer.innerText = '© 2020 Erik Lintunen'
 playground.appendChild(footer)
 
-/* Initialise */
+/* Initialise page */
 
 if (env !== 'development') {
+
+  // TO DO: troubleshoot file loading for dev-server.
+
+  require('../media/visual/neural.gif')
+
+  require('../media/visual/xd.jpg')
+  require('../media/visual/xd_inv.jpg')
+  require('../media/visual/resume.jpg')
+  require('../media/visual/resume_inv.jpg')
 
   // animate()
   sequencer()
@@ -65,3 +74,5 @@ if (env !== 'development') {
   sequencer()
 
 }
+
+export { text, visual }

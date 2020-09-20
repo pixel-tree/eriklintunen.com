@@ -42,17 +42,9 @@ module.exports = {
           'css-loader'],
       },
       {
-				test: /\.(jpg|png|gif|svg)$/,
-				loader: 'url-loader',
-			},
-      {
         test: /\.txt$/i,
         use: 'raw-loader',
       },
-      {
-				test   : /\.(ttf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
-				loader : 'file-loader?name=../build-fonts/[name].[ext]',
-			},
     ],
   },
 };
