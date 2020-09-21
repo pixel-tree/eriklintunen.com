@@ -32,6 +32,8 @@ class Contact {
       '\n' + '\n' + 'YES / NO (for alternatives)' + '\n'
 
     let jQuery = require('jquery.terminal')
+    let openpgp = require('openpgp')
+    let regeneratorRuntime = require('regenerator-runtime')
 
     let phase = 0
     let data = []
@@ -39,7 +41,7 @@ class Contact {
     jQuery(function($, undefined) {
       $('#terminal').terminal(function(command) {
 
-        // yes / no to leave message.
+        // Yes / no to leave message.
         if (phase === 0 && commands.slice(7, 12).includes(command)) {
           // yes
           phase += 1
@@ -54,27 +56,42 @@ class Contact {
         if (!commands.includes(command)) {
           if (phase === 1) {
             phase += 1
+            // Name stored in data[0].
             data[0] = command
             this.echo(String('\n' + 'Enter your contact details:' + '\n'))
           } else if (phase === 2) {
             phase += 1
+            // Contact details stored in data[1].
             data[1] = command
-            this.echo(String('\n' + 'Your message (SHIFT + ENTER for line break):' + '\n'))
-            // TO DO : sort out overflow-x problem.
+            this.echo(String('\n' + 'Your message (SHIFT + ENTER for line break):' + '\n')) // TO DO : sort out overflow-x problem when writing message.
           } else if (phase === 3) {
+            // Reset counter.
             phase = 0
-            data[2] = command
-            // TO DO: ENCRYPT MESSAGE pgp
-            console.log('Sent data: ' + data)
-            $.ajax( {
-              async: false,
-              url: '/send_message',
-              type: 'POST',
-              dataType: 'json',
-              data: JSON.stringify({ data: data })
-              }).done(function(data) {
-                setTimeout(function(){ sequencer() }, 3000)
-            })
+
+            const message = async() => {
+              const pubKey = PGP
+              const options = {
+                message: openpgp.message.fromText(command),
+                publicKeys: (await openpgp.key.readArmored(pubKey)).keys
+              }
+              openpgp.encrypt(options).then(ciphertext => {
+                const encrypted = ciphertext.data
+                // Encrypted string stored in data[2].
+                data[2] = encrypted
+                $.ajax( {
+                  async: false,
+                  url: '/send_message',
+                  type: 'POST',
+                  dataType: 'json',
+                  data: JSON.stringify({ data: data })
+                  }).done(function(data) {
+                    setTimeout(function(){ sequencer() }, 3000)
+                })
+              })
+
+            }
+
+            message() // Encrypt and send message.
             this.echo(String('\n' + 'Thanks for your message!' + '\n'))
           }
         }
