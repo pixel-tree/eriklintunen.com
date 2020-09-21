@@ -156,22 +156,25 @@ li {
 
 /* Blog */
 
-.categories {
+.title {
 	width: 100%;
-	font-family: $N;
-	text-transform: uppercase;
-	font-size: 75px;
-	letter-spacing: 1.8px;
+	text-align: left;
+	font-family: $B;
+	font-size: 15px;
+	letter-spacing: 0.9px;
 	color: $black;
-	text-shadow: 0.9px 0.9px $grayA;
-	cursor: pointer;
+	text-shadow: 0.6px 0.6px $grayA;
+}
+
+.body {
+	width: 100%;
+	padding-bottom: 3vh;
 }
 
 /* Contact */
 
 #terminal {
 	width: 100%;
-	height: 100%;
 }
 
 /* Animate */

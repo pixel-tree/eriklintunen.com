@@ -4,6 +4,8 @@
 
 import '../../style/terminal.scss'
 
+import CONTACT_ADDRESS from '../../media/text/contact.txt'
+import PGP from '../../media/text/pgp.txt'
 import { sequencer } from '../Utils'
 
 class Contact {
@@ -21,91 +23,69 @@ class Contact {
     const commands = [
       '',
       'help', 'Help', 'HELP',
-      'reset', 'Reset', 'RESET'
+      'reset', 'Reset', 'RESET',
+      'yes', 'Yes', 'YES', 'y', 'Y',
+      'no', 'No', 'NO', 'n', 'N'
     ]
 
-    const hello = 'Please leave your message here. ' +
-      'Type ' + '[[i;;]' + 'help ' + ']' + 'for available commands; ' +
-      '[[i;;]' + 'reset ' + ']' + 'to clear form... ' +
-      'INSERT YOUR NAME.' + '\n' + '\n'
-
-    // '[[b;;]' + message + ']' + '\n' + '\n'
+    const hello = 'Please leave your message below. Encrypted using PGP (:' +
+      '\n' + '\n' + 'YES / NO (for alternatives)' + '\n'
 
     let jQuery = require('jquery.terminal')
 
     let phase = 0
+    let data = []
 
     jQuery(function($, undefined) {
       $('#terminal').terminal(function(command) {
 
-// TO DO : feed back messaged for each phase + remove temp console.logs.
-// TO DO : sort out overflow-x problem.
+        // yes / no to leave message.
+        if (phase === 0 && commands.slice(7, 12).includes(command)) {
+          // yes
+          phase += 1
+          this.echo(String('\n' + 'Enter your name:' + '\n'))
+        } else if (phase === 0 && commands.slice(12, 17).includes(command)) {
+          // no
+          this.echo(String('\n' + CONTACT_ADDRESS))
+          this.echo(String('\n' + PGP + '\n'))
+        }
 
-        // If entry not in command array.
+        // If entry not in commands array.
         if (!commands.includes(command)) {
-          if (phase === 0) {
-            let name = command
+          if (phase === 1) {
             phase += 1
-            console.log(name)
-          } else if (phase === 1) {
-            let address = command
-            phase += 1
-            console.log(address)
+            data[0] = command
+            this.echo(String('\n' + 'Enter your contact details:' + '\n'))
           } else if (phase === 2) {
-            let message = command
             phase += 1
-            console.log(message)
+            data[1] = command
+            this.echo(String('\n' + 'Your message (SHIFT + ENTER for line break):' + '\n'))
+            // TO DO : sort out overflow-x problem.
           } else if (phase === 3) {
-            if (command === 'y'
-              || command === 'Y'
-              || command === 'yes'
-              || command === 'Yes'
-              || command === 'YES'
-            ) {
-              // encrypt message
-              phase += 1
-              console.log('encrypted')
-              console.log(phase)
-            } else if (command === 'n'
-              || command === 'N'
-              || command === 'no'
-              || command === 'No'
-              || command === 'NO'
-            ) {
-              phase += 1
-              console.log('not encrypted')
-              console.log(phase)
-            } else {
-              // "you have to choose."
-              console.log('sperg')
-            }
-            if (phase === 4) {
-              // send message
-              $.ajax( {
-                async: false,
-                url: '/send_message',
-                type: 'POST',
-                data: [name, address, message]
-                }).done(function(data) {
-                  console.log('message sent')
-              })
-              // "thanks, etc."
-              sequencer()
-            }
-
+            phase = 0
+            data[2] = command
+            // TO DO: ENCRYPT MESSAGE pgp
+            console.log('Sent data: ' + data)
+            $.ajax( {
+              async: false,
+              url: '/send_message',
+              type: 'POST',
+              dataType: 'json',
+              data: JSON.stringify({ data: data })
+              }).done(function(data) {
+                setTimeout(function(){ sequencer() }, 3000)
+            })
+            this.echo(String('\n' + 'Thanks for your message!' + '\n'))
           }
         }
 
-        //   this.echo(String('\n' + '[[b;;]' + messaging() + ']' + '\n'), {keepWords: true})
-
         // List options.
-        else if (commands.indexOf(command) > 0 && commands.indexOf(command) < 4) {
-          this.echo(String('\n' + '\n' + 'Help here...' + '\n' + '\n'))
-          console.log('Help here...')
+        else if (commands.slice(0, 4).includes(command)) {
+          this.echo(String('\n' + 'Help here...' + '\n'))
         }
 
         // Reset.
-        else if (commands.indexOf(command) >= 4 && commands.indexOf(command) < 7) {
+        else if (commands.slice(4, 7).includes(command)) {
           sequencer()
         }
 

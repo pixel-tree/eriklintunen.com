@@ -34,12 +34,6 @@ function sequencer() {
   // Blog.
   else if (page.content === 'blog') {
     new Blog(playground)
-  } else if (page.content === 'writings') {
-    new Writings(playground)
-  } else if (page.content === 'maths') {
-    new Maths(playground)
-  } else if (page.content === 'news') {
-    new News(playground)
   }
 
   // Contact.

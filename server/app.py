@@ -4,9 +4,10 @@ eriklintunen.com
 Designed by pixel-tree, 2020.
 """
 
+import json
 import os
 
-from flask import Flask, jsonify, request, send_file
+from flask import Flask, request, send_file
 
 # from taiga import detect_intent_texts
 
@@ -21,23 +22,21 @@ def index():
     return send_file("../static/index.html")
 
 
-# # Contact form.
-# @app.route('/send_message', methods=['POST'])
-# def send_message():
-#     message = request.get_data()
-#     destination = os.getenv('CONTACT_ADDRESS')
-#
-
-
-# # Dialogflow.
-# @app.route('/send_message', methods=['POST'])
-# def send_message():
-#     message = request.get_data()
-#     project_id = os.getenv('DIALOGFLOW_PROJECT_ID')
-#     fulfillment_text = detect_intent_texts(project_id, "unique", message, 'en')
-#     response_text = {"message":  fulfillment_text}
-#
-#     return jsonify(response_text)
+# Contact form.
+@app.route('/send_message', methods=['POST'])
+def send_message():
+    data = json.loads(request.get_data())
+    # TO DO: set up mail server to send message etc.
+    print()
+    print("Data received:")
+    print(data)
+    print()
+    print("Name: " + data['data'][0])
+    print("Contact: " + data['data'][1])
+    print("Message: " + data['data'][2])
+    print()
+    # destination = os.getenv('CONTACT_ADDRESS')
+    return data  # placeholder
 
 
 # Use wsgi.py for deployment; this only for dev.

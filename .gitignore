@@ -11,4 +11,4 @@ Pipfile.lock
 static/node_modules/
 static/package-lock.json
 static/src/temp/
-
+static/build/
