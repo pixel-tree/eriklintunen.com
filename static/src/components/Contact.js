@@ -56,12 +56,12 @@ class Contact {
         if (!commands.includes(command)) {
           if (phase === 1) {
             phase += 1
-            // Name stored in data[0].
+            // Name stored to data[0].
             data[0] = command
             this.echo(String('\n' + 'Enter your contact details:' + '\n'))
           } else if (phase === 2) {
             phase += 1
-            // Contact details stored in data[1].
+            // Contact details stored to data[1].
             data[1] = command
             this.echo(String('\n' + 'Your message (SHIFT + ENTER for line break):' + '\n')) // TO DO : sort out overflow-x problem when writing message.
           } else if (phase === 3) {
@@ -76,7 +76,7 @@ class Contact {
               }
               openpgp.encrypt(options).then(ciphertext => {
                 const encrypted = ciphertext.data
-                // Encrypted string stored in data[2].
+                // Encrypted string stored to data[2].
                 data[2] = encrypted
                 $.ajax( {
                   async: false,
@@ -84,7 +84,8 @@ class Contact {
                   type: 'POST',
                   dataType: 'json',
                   data: JSON.stringify({ data: data })
-                  }).done(function(data) {
+                  }).done(function() {
+                    // TO DO: troubleshoot -- doesn't work in Flask.
                     setTimeout(function(){ sequencer() }, 3000)
                 })
               })
