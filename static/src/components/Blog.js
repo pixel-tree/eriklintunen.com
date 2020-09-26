@@ -11,12 +11,12 @@ class Blog {
     for (let i = 0; i < text.blog.length; i++) {
 
       const title = document.createElement('div')
-      title.classList.add('title')
+      title.classList.add('blogTitle')
       title.innerText = text.blog[i].date + ': ' + text.blog[i].title
       content.appendChild(title)
 
       const body = document.createElement('div')
-      body.classList.add('body')
+      body.classList.add('blogBody')
       content.appendChild(body)
 
       for (let j = 0; j < text.blog[i].body.length; j++) {

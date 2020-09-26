@@ -154,9 +154,57 @@ li {
 	cursor: pointer;
 }
 
+.xdTitle {
+
+}
+
+.xdBody {
+
+}
+
+.workHeader {
+	text-align: center;
+	font-family: $N;
+	font-size: 21px;
+	letter-spacing: 1.2px;
+	color: $black;
+	text-shadow: 0.9px 0.9px $grayA;
+	text-align: left;
+}
+
+.resumeCategory {
+	width: 600px;
+	padding-top: 30px;
+	text-align: left;
+	font-family: $B;
+	font-size: 15px;
+	letter-spacing: 0.9px;
+	color: $black;
+	text-shadow: 0.6px 0.6px $grayA;
+}
+
+.resumeEntry {
+	padding-top: 12px;
+	font-size: 13.5px;
+	letter-spacing: 0.9px;
+	color: $black;
+	text-shadow: 0.6px 0.6px $grayA;
+}
+
+.resumeYear {
+	width: 15%;
+	float: left;
+}
+
+.resumeTitle {
+	width: 85%;
+	float: right;
+	font-family: $N;
+}
+
 /* Blog */
 
-.title {
+.blogTitle {
 	width: 100%;
 	text-align: left;
 	font-family: $B;
@@ -166,7 +214,7 @@ li {
 	text-shadow: 0.6px 0.6px $grayA;
 }
 
-.body {
+.blogBody {
 	width: 100%;
 	padding-bottom: 3vh;
 }

@@ -17,7 +17,7 @@ let page = document.createElement('meta')
 page.id = 'page'
 document.head.appendChild(page)
 
-page.content = 'contact' // Default load page
+page.content = 'xd' // Default load page
 
 /* Load data */
 
