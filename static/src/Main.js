@@ -17,7 +17,7 @@ let page = document.createElement('meta')
 page.id = 'page'
 document.head.appendChild(page)
 
-page.content = 'xd' // Default load page
+page.content = 'resume' // Default load page
 
 /* Load data */
 

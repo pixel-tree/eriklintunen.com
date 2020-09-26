@@ -21,16 +21,42 @@
       "category": "solo works",
       "entries": [
         {
-          "year": "year1",
-          "title": "title1"
+          "year": "2020",
+          "title": "Cloudy Logic: A Visual Manifesto on Bias",
+          "venue": [
+            "RCA2020, online (worldwide)"
+          ]
         },
         {
-          "year": "year2",
-          "title": "title2"
+          "year": "2019",
+          "title": "Latent Space Interpolations",
+          "venue": [
+            "U: The Order of Reality, Royal College of Art, London (UK)"
+          ]
         },
         {
-          "year": "year3",
-          "title": "title3"
+          "year": "2019",
+          "title": "Neuroimagined Dreamscapes #1",
+          "venue": [
+            "Royal College of Art, London (UK)",
+            "Meeting of the Minds, Imperial College, London (UK)",
+            "Ugly Duck (collab with Julie Maurin), London (UK)"
+          ]
+        },
+        {
+          "year": "2018",
+          "title": "Fanfare for Satoshi Nakamoto [鉱山]",
+          "venue": [
+            "Degree Show 2018, London College of Communication, London (UK)",
+            "WIRED Creative Hack Awards 2018, Tokyo (JP)"
+          ]
+        },
+        {
+          "year": "2018",
+          "title": "Meditating I/Os",
+          "venue": [
+            "IKLECTIK, London (UK); Resonance FM/Extra (worldwide)"
+          ]
         }
       ]
     },
@@ -38,33 +64,35 @@
       "category": "residencies",
       "entries": [
         {
-          "year": "year1",
-          "title": "title1"
+          "year": "2018",
+          "title": "IKLECTIK, London (UK)",
+          "funded": "Strands (Resonance Extra) X Jerwood Charitable Foundation"
         },
         {
-          "year": "year2",
-          "title": "title2"
-        },
-        {
-          "year": "year3",
-          "title": "title3"
+          "year": "2018",
+          "title": "HOME, Manchester (UK); Barbican Pit Theatre, London (UK)",
+          "funded": "As part of Barbican HOME Open Lab"
         }
       ]
     },
     {
-      "category": "publications",
+      "category": "publications and presentations",
       "entries": [
         {
-          "year": "year1",
-          "title": "title1"
+          "year": "2019",
+          "title": "Latent Spaces: The High-Dimensional Infosphere",
+          "medium": "Short Paper",
+          "venue": [
+            "Halfway to the Future Symposium, Nottingham (UK)"
+          ]
         },
         {
-          "year": "year2",
-          "title": "title2"
-        },
-        {
-          "year": "year3",
-          "title": "title3"
+          "year": "2019",
+          "title": "Neuroimagined Dreamscapes #1",
+          "medium": "Artwork",
+          "venue": [
+            "Meeting of the Minds, Imperial College, London (UK)"
+          ]
         }
       ]
     },
@@ -72,50 +100,195 @@
       "category": "teaching and workshops",
       "entries": [
         {
-          "year": "year1",
-          "title": "title1"
+          "year": "2020",
+          "title": "Guest Lecturer",
+          "venue": [
+            "UAL Creative Computing Institute, London (UK)"
+          ]
         },
         {
-          "year": "year2",
-          "title": "title2"
+          "year": "2019-",
+          "title": "Lecturer in Digital Arts and Computing",
+          "venue": [
+            "Westminster Kingsway College (UAL Extended Diploma), London (UK)"
+          ]
         },
         {
-          "year": "year3",
-          "title": "title3"
+          "year": "2018",
+          "title": "Lead Artist: Jerwood Staging Series--Radiophonic Workshop",
+          "venue": [
+            "Jerwood Visual Arts, London (UK)"
+          ]
+        },
+        {
+          "year": "2018",
+          "title": "Sound for Experimental Theatre",
+          "venue": [
+            "London College of Communication, London (UK)"
+          ]
+        },
+        {
+          "year": "2013",
+          "title": "Media Workshop",
+          "venue": [
+            "Whisper Youth Centre, Joensuu (FI)"
+          ]
+        },
+        {
+          "year": "2012",
+          "title": "Volunteer Language Skills Tutor",
+          "venue": [
+            "Finnish Red Cross, Joensuu (FI)"
+          ]
         }
       ]
     },
     {
-      "category": "radio",
+      "category": "technical",
       "entries": [
         {
-          "year": "year1",
-          "title": "title1"
+          "year": "2020",
+          "title": "Longplayer Assembly",
+          "role": "Technical Producer",
+          "medium": "Remote Radio Broadcast",
+          "venue": [
+            "Artangel X Resonance FM/Extra"
+          ]
         },
         {
-          "year": "year2",
-          "title": "title2"
+          "year": "2020",
+          "title": "South London Gallery Bank Holiday Broadcast",
+          "role": "Technical Producer",
+          "medium": "Remote Radio Broadcast",
+          "venue": [
+            "South London Gallery X Resonance FM"
+          ]
         },
         {
-          "year": "year3",
-          "title": "title3"
-        }
-      ]
-    },
-    {
-      "category": "sound engineering",
-      "entries": [
-        {
-          "year": "year1",
-          "title": "title1"
+          "year": "2020",
+          "title": "IWD 2020",
+          "role": "Remote Producer",
+          "medium": "Remote Radio Broadcast",
+          "venue": [
+            "Brighton Dome X Radio Reverb"
+          ]
         },
         {
-          "year": "year2",
-          "title": "title2"
+          "year": "2019-",
+          "title": "Various concerts",
+          "role": "Sound Engineer",
+          "medium": "Live Music",
+          "venue": [
+            "Cafe OTO, London (UK)"
+          ]
         },
         {
-          "year": "year3",
-          "title": "title3"
+          "year": "2019",
+          "title": "Art on Air",
+          "role": "Remote Producer",
+          "medium": "Remote Radio Broadcasts",
+          "venue": [
+            "Tate Modern X Resonance FM"
+          ]
+        },
+        {
+          "year": "2019",
+          "title": "The Art Schools of North West England",
+          "role": "Producer",
+          "medium": "Radio Feature",
+          "venue": [
+            "Bluecoat Liverpool X Brighton University X Resonance FM"
+          ]
+        },
+        {
+          "year": "2018",
+          "title": "Partial Recall",
+          "role": "Producer",
+          "medium": "Radio Feature",
+          "venue": [
+            "Resonance FM/Extra"
+          ]
+        },
+        {
+          "year": "2018",
+          "title": "Meditating I/Os",
+          "role": "Producer",
+          "medium": "Live Performance and Remote Radio Broadcast",
+          "venue": [
+            "IKLECTIK X Resonance FM/Extra"
+          ]
+        },
+        {
+          "year": "2018",
+          "title": "Who Cares? A Radio Tale",
+          "role": "Technical Producer",
+          "medium": "Remote Radio Broadcasts",
+          "venue": [
+            "Gasworks Gallery X Resonance FM"
+          ]
+        },
+        {
+          "year": "2018",
+          "title": "Bedtime Monologues",
+          "role": "Producer",
+          "medium": "Short Radio Series",
+          "venue": [
+            "Resonance FM"
+          ]
+        },
+        {
+          "year": "2018",
+          "title": "Strangeness",
+          "role": "Producer",
+          "medium": "Radio Feature",
+          "venue": [
+            "Radia Network"
+          ]
+        },
+        {
+          "year": "2017",
+          "title": "The People Show: Live on Air",
+          "role": "Technical Producer",
+          "medium": "Remote Radio Broadcast",
+          "venue": [
+            "Toynbee Studios X Resonance FM"
+          ]
+        },
+        {
+          "year": "2017",
+          "title": "Various concerts",
+          "role": "Sound Engineer",
+          "medium": "Live Music",
+          "venue": [
+            "IKLECTIK, London (UK)"
+          ]
+        },
+        {
+          "year": "2017",
+          "title": "Extra Nights #2",
+          "role": "Co-producer",
+          "medium": "Remote Radio Broadcast",
+          "venue": [
+            "IKLECTIK X Resonance Extra"
+          ]
+        },
+        {
+          "year": "2017",
+          "title": "Index on Censorship Free to Air: Radio Reborn",
+          "role": "Co-producer",
+          "medium": "Remote Radio Broadcast",
+          "venue": [
+            "ustwo X Resonance FM"
+          ]
+        },
+        {
+          "year": "2017",
+          "title": "Various events",
+          "role": "Sound Engineer",
+          "medium": "Live Dance and Live Music",
+          "venue": [
+            "Trinity Laban, London (UK)"
+          ]
         }
       ]
     },
@@ -123,16 +296,171 @@
       "category": "collaborative works",
       "entries": [
         {
-          "year": "year1",
-          "title": "title1"
+          "year": "2020",
+          "title": "IED2020",
+          "role": "Programmer",
+          "medium": "Website",
+          "venue": [
+            "IED2020, online"
+          ]
         },
         {
-          "year": "year2",
-          "title": "title2"
+          "year": "2020",
+          "title": "Bacteria as a Digital Mediator",
+          "role": "Programmer",
+          "medium": "Website",
+          "venue": [
+            "RCA2020, online"
+          ]
         },
         {
-          "year": "year3",
-          "title": "title3"
+          "year": "2019",
+          "title": "Passage",
+          "role": "Performer",
+          "medium": "Live Performance",
+          "venue": [
+            "London-Manchester Virgin Train (UK)",
+            "Resonance Extra (worldwide)"
+          ]
+        },
+        {
+          "year": "2019",
+          "title": "Gymnopaedia Exercise Number 1",
+          "role": "Programmer",
+          "medium": "Installation",
+          "venue": [
+            "She Who Loves Silence, Castor Projects, London (UK)"
+          ]
+        },
+        {
+          "year": "2019",
+          "title": "Pile",
+          "role": "Programmer",
+          "medium": "Animation",
+          "venue": [
+            "Show 2019, Royal College of Art, London (UK)"
+          ]
+        },
+        {
+          "year": "2019",
+          "title": "Peanuts Chatterbots",
+          "role": "Programmer",
+          "medium": "Installation",
+          "venue": [
+            "Good Grief! Gallery Late: Love is... Unrequited, Somerset House, London (UK)"
+          ]
+        },
+        {
+          "year": "2018",
+          "title": "Phantom Field",
+          "role": "Performer",
+          "medium": "Live Performance",
+          "venue": [
+            "202 Gallery, Central Saint Martins, London (UK)"
+          ]
+        },
+        {
+          "year": "2017",
+          "title": "Pixel Tears",
+          "role": "Sound Designer",
+          "medium": "Live Performance",
+          "venue": [
+            "White Lab, Central Saint Martins, London (UK)",
+            "Ugly Duck, London (UK)",
+            "Camden People’s Theatre, London (UK)"
+          ]
+        },
+        {
+          "year": "2017",
+          "title": "Something Spinning Ends",
+          "role": "Sound Designer",
+          "medium": "Live Performance",
+          "venue": [
+            "The Cockpit Theatre, London (UK)"
+          ]
+        },
+        {
+          "year": "2017",
+          "title": "Girls Eat",
+          "role": "Sound Designer",
+          "medium": "Live Performance",
+          "venue": [
+            "The Cockpit Theatre, London (UK)"
+          ]
+        },
+        {
+          "year": "2017",
+          "title": "DPoT",
+          "role": "Producer",
+          "medium": "Multi-channel Composition",
+          "venue": [
+            "Performance Lab, London College of Communication, London (UK)"
+          ]
+        },
+        {
+          "year": "2017",
+          "title": "Hold Tight and Sink",
+          "role": "Performer",
+          "medium": "Live Performance",
+          "venue": [
+            "Platform Theatre, Central Saint Martins, London (UK)"
+          ]
+        },
+        {
+          "year": "2016",
+          "title": "RA Lates: The 1898 Bal du Rat Mort",
+          "role": "Sound Designer",
+          "medium": "Short Film",
+          "venue": [
+            "Royal Academy of Arts, London (UK)"
+          ]
+        },
+        {
+          "year": "2016",
+          "title": "Another Bald Dead Woman",
+          "role": "Sound Designer",
+          "medium": "Live Performance",
+          "venue": [
+            "White Lab, Central Saint Martins, London (UK)",
+            "Town Hall, SPILL Festival, Ipswich (UK)"
+          ]
+        },
+        {
+          "year": "2016",
+          "title": "New Order: People on the High Line",
+          "role": "Sound Designer",
+          "medium": "Music Video",
+          "venue": [
+            "YouTube"
+          ]
+        },
+        {
+          "year": "2016",
+          "title": "No Longer a Secret",
+          "role": "Sound Designer",
+          "medium": "Live Performance",
+          "venue": [
+            "Studio Theatre, Central Saint Martins, London (UK)"
+          ]
+        },
+        {
+          "year": "2016",
+          "title": "CULT",
+          "role": "Sound Engineer",
+          "medium": "Live Performance",
+          "venue": [
+            "White Lab, Central Saint Martins, London (UK)",
+            "Tokyo Future Shorts, Tokyo (JP)"
+          ]
+        },
+        {
+          "year": "2016",
+          "title": "36 Dramatic Situations",
+          "role": "Sound Designer",
+          "medium": "Installation",
+          "venue": [
+            "Chelsea College of Arts, London (UK)"
+          ]
         }
       ]
     },
@@ -140,16 +468,16 @@
       "category": "awards",
       "entries": [
         {
-          "year": "year1",
-          "title": "title1"
+          "year": "2018",
+          "title": "WIRED Japan Creative Hack Award Finalist"
         },
         {
-          "year": "year2",
-          "title": "title2"
+          "year": "2018",
+          "title": "CSM Steamhack #4 Winner"
         },
         {
-          "year": "year3",
-          "title": "title3"
+          "year": "2004",
+          "title": "Clitheroe 2000 Young Achiever of the Year"
         }
       ]
     },
@@ -157,16 +485,24 @@
       "category": "education",
       "entries": [
         {
-          "year": "year1",
-          "title": "title1"
+          "year": "2020-",
+          "title": "Mathematics",
+          "school": "Open University (UK)"
         },
         {
-          "year": "year2",
-          "title": "title2"
+          "year": "2018-2020",
+          "title": "Master of Arts (Information Experience Design)",
+          "school": "Royal College of Art (UK)"
         },
         {
-          "year": "year3",
-          "title": "title3"
+          "year": "2015-2018",
+          "title": "Bachelor of Arts with Honours (Sound Arts and Design)",
+          "school": "London College of Communication (UK)"
+        },
+        {
+          "year": "2010-2013",
+          "title": "IB Diploma Programme",
+          "school": "Joensuun Lyseon Lukio (FI)"
         }
       ]
     }

@@ -100,10 +100,12 @@ class Resume {
       // Entries under categories, each with year and title.
       for (let j = 0; j < text.resume[i].entries.length; j++) {
 
+        // Container.
         const entry = document.createElement('div')
         entry.classList.add('resumeEntry')
         category.appendChild(entry)
 
+        // Common keys for each entry.
         const year = document.createElement('div')
         year.classList.add('resumeYear')
         year.innerText = text.resume[i].entries[j].year
@@ -113,6 +115,48 @@ class Resume {
         title.classList.add('resumeTitle')
         title.innerText = text.resume[i].entries[j].title
         entry.appendChild(title)
+
+        const meta = document.createElement('div')
+        meta.classList.add('resumeMeta')
+        entry.appendChild(meta)
+
+        // Extract key-value pairs for category-specific data.
+        const keys = Object.keys(text.resume[i].entries[j])
+
+        // Set height (px) of each entry relative to
+        // the number of lines required for metadata.
+        let height = 19  // base height (font-size + 4).
+
+        // Loop through keys but ignore year and title (common keys).
+        keys.slice(2).forEach((key, index) => {
+
+          // Multiple paragraphs if no. venues > 1.
+          // TO DO: store some of below in variables to make more legible.
+          if (`${key}` === 'venue') {
+            for (let k = 0; k < `${text.resume[i].entries[j][key].length}`; k++) {
+              const metaData = document.createElement('p')
+              // Punctuation within venue list.
+              if (k < `${text.resume[i].entries[j][key].length}` - 1) {
+                metaData.innerText = `${text.resume[i].entries[j][key][k]}` + ';'
+              } else if (k === `${text.resume[i].entries[j][key].length}` - 1 && k !== 0){
+                metaData.innerText = 'and ' + `${text.resume[i].entries[j][key][k]}`
+              } else {
+                metaData.innerText = `${text.resume[i].entries[j][key][k]}`
+              }
+              // metaData.classList.add('venue')
+              meta.appendChild(metaData)
+              height += 14  // font-size + 4.
+            }
+          } else {  // All other works.
+            const metaData = document.createElement('p')
+            metaData.innerText = `${text.resume[i].entries[j][key]}`
+            meta.appendChild(metaData)
+            height += 14  // font-size + 4.
+          }
+        })
+
+        // Update height.
+        entry.style.height = height + 'px'
 
       }
 
