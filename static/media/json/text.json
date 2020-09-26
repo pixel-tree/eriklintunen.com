@@ -510,30 +510,152 @@
 
   "blog": [
     {
-      "date": "000001",
-      "title": "Testing the Blog 1",
+      "date": "",
+      "title": "",
       "body": [
-        "paragraph 1.1",
-        "paragraph 1.2",
-        "paragraph 1.3"
+        ""
+      ],
+      "links": [
+        ""
+      ],
+      "embeds": [
+        ""
       ]
     },
     {
-      "date": "000002",
-      "title": "Testing the Blog 2",
+      "date": "230720",
+      "title": "RCA2020",
       "body": [
-        "paragraph 2.1",
-        "paragraph 2.2",
-        "paragraph 2.3"
+        "My artwork Cloudy Logic: A Visual Manifesto on Bias is now public as part of RCA2020. I'm so honoured to have my project featured in the collections Data and AI and Humanistic Technologists Design For The Now curated by Anna Ridler and John Maeda respectively. Also check out our own IED2020 site."
+      ],
+      "links": [
+        "https://cloudylogic.space/",
+        "https://2020.rca.ac.uk/students/erik-lintunen",
+        "https://2020.rca.ac.uk/collections/data-and-ai",
+        "https://2020.rca.ac.uk/collections/humanistic-technologists-design-for-the-now",
+        "https://rcaied.com/"
+      ],
+      "embeds": [
+        ""
       ]
     },
     {
-      "date": "000003",
-      "title": "Testing the Blog 3",
+      "date": "070520",
+      "title": "Suspensions (Hanging Out and Hanging In)",
       "body": [
-        "paragraph 3.1",
-        "paragraph 3.2",
-        "paragraph 3.3"
+        "My work is included in this article written by Agata Kik."
+      ],
+      "links": [
+        "https://www.clotmag.com/oped/suspensions-hanging-out-and-hanging-in-suspended-by-covid-19-by-agata-kik"
+      ],
+      "embeds": [
+        ""
+      ]
+    },
+    {
+      "date": "060520",
+      "title": "Dance dance dance",
+      "body": [
+        "BAM. Something woke me up in the early hours of the morning. I could see no light shine through the curtains, and I was generally incapable of forming any serious deductions regarding time having been summoned prematurely from a deep sleep.",
+        "I sat up on the edge of my futon bed. The floor beneath my feet felt solid and from what first seemed like an innocent pinch of chill on my toes emerged an overwhelming wave of cold that traversed vertically up my body faster than I was able to react. Seeing as there was such significant latency between my sense organs and motor functions at this time, there was little point in resisting the unpleasantness that the bare stone tiles had imposed on my feet. I walked over to the kitchen and brewed some coffee.",
+        "My morning rituals weren’t true rituals. Sure, there was a framework within which everything occurred: coffee, radio, reading and perhaps a little bit of writing. However, these events lacked consistency in how they were ordered and I often lost myself to any of these activities for lengthy periods of time. In general my mornings consisted of hanging out in little clothing, enjoying some calm before the expected storm. Indeed, the absence of noise was the most distinct pleasure about this time of day, whereas noon was unreasonably costly for my attention span.",
+        "The first notable thing to occupy my mind was a gentle downpour of rain that brushed the ceiling outside, the sound of which was arhythmic but soft and pleasant and something that I was lost to, listening, for a good while. The performance was accompanied by a sound of coffee dripping into the glass pan. My nose caught onto a familiar scent that filled the room. This made my experience less esoteric and more mundane; and it grounded me back to the present, to the realisation that it was yet another Monday, meaning that yet another week had been buried in time and yet another had begun. And I was still standing in my kitchen, yet again contemplating this cycle.",
+        "I observed nothing of interest in the garden. The absence of life was a tad strange for this time of year but, then again, it was probably nighttime. I was running on autopilot and time in my equation mattered little, as I would be unable to return to sleep regardless. In this world, time had become an insignificant asset anyway. I had forgotten exactly how long it was since the transition from the past world had taken place, but my intuition was that things had radically changed within a short period of time. Thereafter, my experience of time had transformed from something I had little to spare to something much more elastic and expendable.",
+        "It was then that I noticed a full moon in the sky, existing in captivating stillness with few stars distributed across the dark cloudscape. Unperturbed, I poured myself the coffee and played music. Thoughtfully choosing something that fit my state of mind, I danced like a madman. Time passed. I felt no exhaustion and kept in motion. And so I danced on my (in)determinate dream."
+      ],
+      "links": [
+        ""
+      ],
+      "embeds": [
+        ""
+      ]
+    },
+    {
+      "date": "270220",
+      "title": "Elusive Deep Learning",
+      "body": [
+        "Read on Medium."
+      ],
+      "links": [
+        "https://medium.com/@erik.lintunen/elusive-deep-learning-5cd209a1c278?sk=100acfc23af8e5a3adc457b10dbbee59"
+      ],
+      "embeds": [
+        ""
+      ]
+    },
+    {
+      "date": "040220",
+      "title": "Does a vision materialise when dreamed?",
+      "body": [
+        "‘You’re taking away the poetry from my world, man,’ I thought, as I listened intently to the passionate gentleman standing before me.",
+        "I drew to pass the time (and to distract myself from thinking about you): an abstract city of information; two androgynous figures overlooking the monotonous plane. ‘Look around,’ they say. ‘The patterns are vague here.’ And true they were. The horizon was populated by a vast sea of noise.",
+        "All beings and things around me faded, and I sunk deep into my chair held gently against the hard plastic not only by the ever-penetrating force of gravity but also an ineffable energy (of love?): I lost myself to thought, losing track of the day, of position, and of all earthly concepts; a fluffy cloud of nothingness surrounded me as I lost all phenomenal presence. I was stripped down and smitten by my memories. WHACK.",
+        "The scene played out within the confines of my mind. I was transported some nights back: holding your gaze, somewhat shy, evoking an atmosphere of tension tender but wild. THUMP. Forces collided in time and space; a profoundly unexpected moment, like an ephemeral poem recited by the universe, emerging amidst the chaos for us to share. ‘Yada yada…’ my lips were moving to a well-rehearsed story, but my attention was fixed in your stare.",
+        "The sonata goes on, as indeterminate as ever. The jazz is playing; the moon perpetually fixed at full exposure, smiling. Does a vision materialise when dreamed?"
+      ],
+      "links": [
+        ""
+      ],
+      "embeds": [
+        ""
+      ]
+    },
+    {
+      "date": "270120",
+      "title": "Learning from Machines",
+      "body": [
+        "My work is featured in this article written by Kevin Walker."
+      ],
+      "links": [
+        "https://medium.com/@Kevin7_62820/learning-from-machines-conversations-with-artists-about-machine-learning-7db6b34d038c"
+      ],
+      "embeds": [
+        ""
+      ]
+    },
+    {
+      "date": "270120",
+      "title": "The stars down to Earth",
+      "body": [
+        "‘Adorno was onto something,’ I realised, as my shadow wandered through the peculiar scene resembling a familiar tale; perhaps, from the stories of <i>One Thousand and One Nights</i>: a vast desertscape exposed by starlight. Whilst my body lay static on the dune, I was left to navigate the restless labyrinth of my mind.",
+        "The view was utterly hypnotising, and I began to draw imaginary connections between each glaring ball of gas in the sky, the light emitting a narrative for the rest of the universe to read: complex histories interwoven; the past and the present compressed into a 2D tapestry, broadcast as a nebulous glow, a heap of meaningless noise.",
+        "‘I have no knowledge of astronomy,’ I murmured to myself, but noticed in the periphery of my eye an uncanny constellation emerging.",
+        "I awoke to a sensation of sand dripping down my face; and discovered myself half asleep before a computer screen. A glance outside, through the lonely studio window, was telling of night-time: few apartments displayed any evidence of life in the block facing mine. I prepared myself some coffee, and thereafter devoted my full attention to the task at hand: swiftly, I was swallowed into bit space, and my consciousness descended into a dense philosophical fog.",
+        "‘Epoch 10,000,’ proclaimed the terminal, and so, my algorithmic score had been iterated over and played to its end; and yet another ideology had taken material form. Superficially speaking, the results were impressive, but I was unable to articulate the magic bubbling beneath the surface. I imagined life inside my crystal ball, a somewhat absurd personification of computation: a fantasia of microscopic cogwheels and alien lifeforms tearing down my input images into individual pixels, rearranging these into strings and mechanically transforming the sequences into increasingly intelligible sets of features, the laborious process of prediction overseen by an executive jury. The vision humoured me.",
+        "Indeed, the operational aspects of my network were concealed, obfuscated by intricate mathematical operations; therefore, making its internal workings unexplainable. Although I wanted to avoid speculating on its wider implications, the idea of deploying abstract authority into a real-world context felt rather worrying. The performance was otherwordly but indecipherable without a map of some kind: to represent the hierarchy, to read my stars.",
+        "I felt the full weight of my insomnia, accentuated by caffeine. It was hard to believe that a fragment of my reality could be captured by the system and, literally, broken into bits. The first observable patterns from my experiments evoked a paralysing sense of awe, a childlike wonder, that I continued to experience long into the gentle winter dawn."
+      ],
+      "links": [
+        ""
+      ],
+      "embeds": [
+        ""
+      ]
+    },
+    {
+      "date": "160120",
+      "title": "B O",
+      "body": [
+        ""
+      ],
+      "links": [
+        ""
+      ],
+      "embeds": [
+        "<iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/745021708%3Fsecret_token%3Ds-DI6Fi&color=%232d352c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe>"
+      ]
+    },
+    {
+      "date": "310819",
+      "title": "Suspensions - 01 東京都",
+      "body": [
+        ""
+      ],
+      "links": [
+        ""
+      ],
+      "embeds": [
+        "<iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/674069354%3Fsecret_token%3Ds-miXej&color=%232d352c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe>"
       ]
     }
   ]

@@ -8,7 +8,14 @@ import { sequencer } from '../Utils'
 class Blog {
   constructor(container) {
 
-    for (let i = 0; i < text.blog.length; i++) {
+    // TO DO: Devise system to algorithmically generate content
+    // but need to include a way to load and order links, embeds, media...
+    // Currently missing (decide whether to archive or include in live build):
+    // 140520: The expressive power of the (digital) line
+    // 270420: A case for postdramatic theatre
+
+    // Generate content but skip first object (template).
+    for (let i = 1; i < text.blog.length; i++) {
 
       const title = document.createElement('div')
       title.classList.add('blogTitle')
@@ -21,7 +28,7 @@ class Blog {
 
       for (let j = 0; j < text.blog[i].body.length; j++) {
         const paragraph = document.createElement('p')
-        paragraph.innerText = text.blog[i].body[j]
+        paragraph.innerHTML = text.blog[i].body[j]
         body.appendChild(paragraph)
       }
 
