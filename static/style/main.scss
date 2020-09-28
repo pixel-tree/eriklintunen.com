@@ -102,6 +102,13 @@ li {
 		color: $black;
 		text-shadow: 0.6px 0.6px $grayA;
 	}
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
 }
 
 #content::-webkit-scrollbar {

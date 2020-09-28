@@ -526,14 +526,24 @@
       "date": "230720",
       "title": "RCA2020",
       "body": [
-        "My artwork Cloudy Logic: A Visual Manifesto on Bias is now public as part of RCA2020. I'm so honoured to have my project featured in the collections Data and AI and Humanistic Technologists Design For The Now curated by Anna Ridler and John Maeda respectively. Also check out our own IED2020 site."
+        "My artwork [1] is now public as part of [2]. I'm so honoured to have my project featured in the collections [3] and [4] curated by Anna Ridler and John Maeda respectively. Also check out our own [5]."
       ],
       "links": [
-        "https://cloudylogic.space/",
-        "https://2020.rca.ac.uk/students/erik-lintunen",
-        "https://2020.rca.ac.uk/collections/data-and-ai",
-        "https://2020.rca.ac.uk/collections/humanistic-technologists-design-for-the-now",
-        "https://rcaied.com/"
+        {
+          "Cloudy Logic: A Visual Manifesto on Bias": "https://cloudylogic.space/"
+        },
+        {
+          "RCA2020": "https://2020.rca.ac.uk/students/erik-lintunen"
+        },
+        {
+          "Data and AI": "https://2020.rca.ac.uk/collections/data-and-ai"
+        },
+        {
+          "Humanistic Technologists Design For The Now": "https://2020.rca.ac.uk/collections/humanistic-technologists-design-for-the-now"
+        },
+        {
+          "IED2020 site": "https://rcaied.com/"
+        }
       ],
       "embeds": [
         ""
@@ -543,10 +553,12 @@
       "date": "070520",
       "title": "Suspensions (Hanging Out and Hanging In)",
       "body": [
-        "My work is included in this article written by Agata Kik."
+        "My work is included in [1] written by Agata Kik."
       ],
       "links": [
-        "https://www.clotmag.com/oped/suspensions-hanging-out-and-hanging-in-suspended-by-covid-19-by-agata-kik"
+        {
+          "this article": "https://www.clotmag.com/oped/suspensions-hanging-out-and-hanging-in-suspended-by-covid-19-by-agata-kik"
+        }
       ],
       "embeds": [
         ""
@@ -564,7 +576,9 @@
         "It was then that I noticed a full moon in the sky, existing in captivating stillness with few stars distributed across the dark cloudscape. Unperturbed, I poured myself the coffee and played music. Thoughtfully choosing something that fit my state of mind, I danced like a madman. Time passed. I felt no exhaustion and kept in motion. And so I danced on my (in)determinate dream."
       ],
       "links": [
-        ""
+        {
+          "": ""
+        }
       ],
       "embeds": [
         ""
@@ -574,10 +588,12 @@
       "date": "270220",
       "title": "Elusive Deep Learning",
       "body": [
-        "Read on Medium."
+        "Read on [1]."
       ],
       "links": [
-        "https://medium.com/@erik.lintunen/elusive-deep-learning-5cd209a1c278?sk=100acfc23af8e5a3adc457b10dbbee59"
+        {
+          "Medium": "https://medium.com/@erik.lintunen/elusive-deep-learning-5cd209a1c278?sk=100acfc23af8e5a3adc457b10dbbee59"
+        }
       ],
       "embeds": [
         ""
@@ -594,7 +610,9 @@
         "The sonata goes on, as indeterminate as ever. The jazz is playing; the moon perpetually fixed at full exposure, smiling. Does a vision materialise when dreamed?"
       ],
       "links": [
-        ""
+        {
+          "": ""
+        }
       ],
       "embeds": [
         ""
@@ -604,10 +622,12 @@
       "date": "270120",
       "title": "Learning from Machines",
       "body": [
-        "My work is featured in this article written by Kevin Walker."
+        "My work is featured in [1] written by Kevin Walker."
       ],
       "links": [
-        "https://medium.com/@Kevin7_62820/learning-from-machines-conversations-with-artists-about-machine-learning-7db6b34d038c"
+        {
+          "this article": "https://medium.com/@Kevin7_62820/learning-from-machines-conversations-with-artists-about-machine-learning-7db6b34d038c"
+        }
       ],
       "embeds": [
         ""
@@ -626,7 +646,9 @@
         "I felt the full weight of my insomnia, accentuated by caffeine. It was hard to believe that a fragment of my reality could be captured by the system and, literally, broken into bits. The first observable patterns from my experiments evoked a paralysing sense of awe, a childlike wonder, that I continued to experience long into the gentle winter dawn."
       ],
       "links": [
-        ""
+        {
+          "": ""
+        }
       ],
       "embeds": [
         ""
@@ -639,7 +661,9 @@
         ""
       ],
       "links": [
-        ""
+        {
+          "": ""
+        }
       ],
       "embeds": [
         "<iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/745021708%3Fsecret_token%3Ds-DI6Fi&color=%232d352c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe>"
@@ -652,7 +676,9 @@
         ""
       ],
       "links": [
-        ""
+        {
+          "": ""
+        }
       ],
       "embeds": [
         "<iframe width='100%' height='166' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/674069354%3Fsecret_token%3Ds-miXej&color=%232d352c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe>"
