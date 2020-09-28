@@ -11,11 +11,12 @@ class Blog {
     // Currently missing (decide whether to archive or include in live build):
     // 140520: The expressive power of the (digital) line
     // 270420: A case for postdramatic theatre
+    // New math blog
 
     // Generate content but skip first object (template).
     for (let i = 1; i < text.blog.length; i++) {
 
-      // Post title (date: header).
+      // Entry header (date: title).
       const title = document.createElement('div')
       title.classList.add('blogTitle')
       title.innerText = text.blog[i].date + ': ' + text.blog[i].title
@@ -34,30 +35,22 @@ class Blog {
         paragraph.innerHTML = text.blog[i].body[j]
         body.appendChild(paragraph)
 
-        // If text includes links.
+        // If links included.
         if (text.blog[i].links.length > 0) {
-          // Replace markers for links and descriptions.
+          // Replace markers ([1], [2], ...) for links and descriptions.
           for (let k = 0; k < text.blog[i].links.length; k++) {
             const link = Object.values(text.blog[i].links[k])
             const description = Object.keys(text.blog[i].links[k])
-            const replacement = paragraph.innerHTML.replace('[' + (k + 1) + ']', '<a href="' + link + '">' + description + '</a>')
+            const replacement = paragraph.innerHTML.replace(
+              '[' + (k + 1) + ']',
+              '<a target="_blank" rel="noopener" href="' + link + '">' + description + '</a>')
             paragraph.innerHTML = replacement
           }
         }
 
       }
 
-      // Include embeds if any.
-      if (text.blog[i].embeds.length > 0) {
-        for (let j = 0; j < text.blog[i].embeds.length; j++) {
-          const paragraph = document.createElement('p')
-          paragraph.innerHTML = text.blog[i].embeds[j]
-          body.appendChild(paragraph)
-        }
-      }
-
     }
-
 
   }
 }

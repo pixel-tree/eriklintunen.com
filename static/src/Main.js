@@ -17,7 +17,7 @@ let page = document.createElement('meta')
 page.id = 'page'
 document.head.appendChild(page)
 
-page.content = 'blog' // Default load page
+page.content = 'about' // Default load page.
 
 /* Load data */
 
@@ -34,6 +34,8 @@ document.body.appendChild(playground)
 
 const extLink = document.createElement('a')
 extLink.setAttribute('href', text.latest)
+extLink.setAttribute('target', '_blank')
+extLink.setAttribute('rel', 'noopener')
 extLink.id = 'extLink'
 extLink.innerText = '¯\\_(ツ)_/¯'
 playground.appendChild(extLink)
