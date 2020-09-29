@@ -42,12 +42,13 @@ body, #playground {
 
 #extLink {
 	position: absolute;
-	top: 0.6vh;
-	right: 1.5vw;
+	top: 1.5vh;
+	right: 1.2vw;
 	text-decoration: none;
 	font-family: $N;
 	font-size: 15px;
 	letter-spacing: 1.2px;
+	transform: scale(1, 1.2);
 	color: $black;
 	text-shadow: 0.9px 0.9px $grayA;
 	cursor: pointer;

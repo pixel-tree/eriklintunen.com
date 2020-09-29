@@ -1,6 +1,9 @@
 .DS_Store
 .env
 
+TODO.txt
+unused/
+
 hidden/
 
 bin/
@@ -13,4 +16,3 @@ static/node_modules/
 static/package-lock.json
 static/src/temp/
 static/build/
-static/unused/

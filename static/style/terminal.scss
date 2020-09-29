@@ -666,8 +666,8 @@ terminal .terminal-output > div {
     clear: both;
 }
 .terminal .terminal-output > :not(.raw) a[href], .cmd a[href] {
-    color: #0F60FF;
-    color: var(--link-color, #0F60FF);
+    color: $text-color;
+    color: var(--link-color, $text-color);
     cursor: pointer;
 }
 .cmd a[href]:not(.terminal-inverted),

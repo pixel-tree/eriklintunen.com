@@ -11,8 +11,6 @@ from dotenv import load_dotenv
 from flask import Flask, request, send_file
 from flask_mail import Mail, Message
 
-# from taiga import detect_intent_texts
-
 app = Flask(__name__,
             static_url_path="",
             static_folder=os.path.abspath("../static"))
@@ -48,6 +46,6 @@ def send_message():
     return 'message sent!'
 
 
-# Use wsgi.py for deployment; this only for dev.
+# wsgi.py for deployment; this as main for dev.
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000)

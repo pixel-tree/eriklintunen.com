@@ -22,7 +22,6 @@ class Contact {
 
     const commands = [
       '',
-      'help', 'Help', 'HELP',
       'reset', 'Reset', 'RESET',
       'yes', 'Yes', 'YES', 'y', 'Y',
       'no', 'No', 'NO', 'n', 'N'
@@ -42,11 +41,11 @@ class Contact {
       $('#terminal').terminal(function(command) {
 
         // Yes / no to leave message.
-        if (phase === 0 && commands.slice(7, 12).includes(command)) {
+        if (phase === 0 && commands.slice(4, 9).includes(command)) {
           // yes
           phase += 1
           this.echo(String('\n' + 'Enter your name:' + '\n'))
-        } else if (phase === 0 && commands.slice(12, 17).includes(command)) {
+        } else if (phase === 0 && commands.slice(9, 14).includes(command)) {
           // no
           this.echo(String('\n' + PGP))
           this.echo(String('\n' + text.contact.mail + '\n'))
@@ -98,13 +97,8 @@ class Contact {
           }
         }
 
-        // List options.
-        else if (commands.slice(0, 4).includes(command)) {
-          this.echo(String('\n' + 'Help here...' + '\n'))
-        }
-
         // Reset.
-        else if (commands.slice(4, 7).includes(command)) {
+        else if (commands.slice(1, 4).includes(command)) {
           sequencer()
         }
 
