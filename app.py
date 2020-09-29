@@ -13,7 +13,7 @@ from flask_mail import Mail, Message
 
 app = Flask(__name__,
             static_url_path="",
-            static_folder=os.path.abspath("../static"))
+            static_folder=os.path.abspath("./static"))
 
 # Environment variables.
 load_dotenv()
@@ -31,7 +31,7 @@ mail = Mail(app)
 # General.
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return send_file("../static/index.html")
+    return send_file("./static/index.html")
 
 
 # Mail from contact form.
