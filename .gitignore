@@ -3,14 +3,12 @@
 
 TODO.txt
 unused/
-
 hidden/
 
 bin/
 include/
 lib/
 pip-selfcheck.json
-Pipfile.lock
 
 static/node_modules/
 static/package-lock.json
