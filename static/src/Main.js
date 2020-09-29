@@ -7,7 +7,8 @@ import '../style/main.scss'
 
 import { sequencer } from './Utils'
 
-import { Nav } from './Nav'
+import { Mobile } from './components/Mobile'
+import { Nav } from './components/Nav'
 
 /* Metadata */
 
@@ -52,6 +53,8 @@ const footer = document.createElement('div')
 footer.id = 'footer'
 footer.innerText = '© 2020 Erik Lintunen'
 playground.appendChild(footer)
+
+const mobile = new Mobile(playground)
 
 /* Initialise page */
 

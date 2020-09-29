@@ -4,8 +4,8 @@
 
 import '../../style/terminal.scss'
 
-import CONTACT_ADDRESS from '../../media/text/contact.txt'
 import PGP from '../../media/text/pgp.txt'
+import { text } from '../Main'
 import { sequencer } from '../Utils'
 
 class Contact {
@@ -48,8 +48,9 @@ class Contact {
           this.echo(String('\n' + 'Enter your name:' + '\n'))
         } else if (phase === 0 && commands.slice(12, 17).includes(command)) {
           // no
-          this.echo(String('\n' + CONTACT_ADDRESS))
-          this.echo(String('\n' + PGP + '\n'))
+          this.echo(String('\n' + PGP))
+          this.echo(String('\n' + text.contact.mail + '\n'))
+
         }
 
         // If entry not in commands array.

@@ -13,3 +13,4 @@ static/node_modules/
 static/package-lock.json
 static/src/temp/
 static/build/
+static/unused/

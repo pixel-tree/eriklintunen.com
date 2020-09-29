@@ -5,7 +5,7 @@
 @import 'main.scss';
 
 // Colours.
-$BG: rgb(240, 240, 240);
+$BG: transparent;
 $text-color: $black;
 
 // Font.
@@ -165,9 +165,9 @@ body.full-screen-terminal .terminal {
 }
 .terminal .terminal-output > :not(.raw) a[href]:hover span,
 .cmd a[href]:hover span {
-    background-color: #0F60FF !important;
-    background-color: var(--link-color, #0F60FF) !important;
-    color: var(--background, $BG) !important;
+    // background-color: #0F60FF !important;
+    // background-color: var(--link-color, #0F60FF) !important;
+    // color: var(--background, $BG) !important;
     text-decoration: none;
 }
 .cmd .cmd-cursor {
@@ -678,9 +678,9 @@ terminal .terminal-output > div {
     background: var(--color, #ccc);
 }
 .terminal .terminal-output > :not(.raw) a[href]:hover, .cmd a[href]:hover {
-    background-color: #0F60FF;
-    background-color: var(--link-color, #0F60FF);
-    color: var(--background, $BG) !important;
+    // background-color: #0F60FF;
+    // background-color: var(--link-color, #0F60FF);
+    // color: var(--background, $BG) !important;
     text-decoration: none;
 }
 .terminal .terminal-fill {

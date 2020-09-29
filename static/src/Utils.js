@@ -4,7 +4,7 @@
 
 import { About } from './components/About'
 import { Works, XD, Resume } from './components/Works'
-import { Blog, Writings, Maths, News } from './components/Blog'
+import { Blog } from './components/Blog'
 import { Contact } from './components/Contact'
 
 /* Clear element */

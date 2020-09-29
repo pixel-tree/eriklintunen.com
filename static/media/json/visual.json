@@ -20,5 +20,15 @@
       "id": "resume_inv",
       "path": "./media/visual/resume_inv.jpg"
     }
+  },
+  "blog": {
+    "post": {
+      "id": "",
+      "path": ""
+    }
+  },
+  "contact": {
+    "id": "noise",
+    "path": "./media/visual/noise.gif"
   }
 }
