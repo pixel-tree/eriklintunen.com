@@ -12,11 +12,11 @@ module.exports = merge(common, {
     rules: [
       {
 				test: /\.(jpg|png|gif|svg)$/,
-				loader: 'url-loader',
+				loader: 'file-loader?name=./media/visual/[name].[ext]',
 			},
       {
-				test   : /\.(ttf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
-				loader : 'url-loader',
+				test: /\.(ttf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
+				loader: 'file-loader?name=./media/fonts/[name].[ext]',
 			},
     ],
   },

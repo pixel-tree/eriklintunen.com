@@ -28,7 +28,7 @@ class Contact {
     ]
 
     const hello = 'Please leave your message below. Encrypted using PGP (:' +
-      '\n' + '\n' + '(Y)ES / (N)O (for alternatives)' + '\n'
+      '\n' + '\n' + '(Y)ES to proceed / (N)O for alternatives' + '\n'
 
     let jQuery = require('jquery.terminal')
     let openpgp = require('openpgp')
@@ -63,7 +63,7 @@ class Contact {
             phase += 1
             // Contact details stored to data[1].
             data[1] = command
-            this.echo(String('\n' + 'Your message (SHIFT + ENTER for line break):' + '\n')) // TO DO : sort out overflow-x problem when writing message.
+            this.echo(String('\n' + 'Your message (SHIFT + ENTER for line break):' + '\n'))
           } else if (phase === 3) {
             // Reset counter.
             phase = 0
@@ -82,10 +82,8 @@ class Contact {
                   async: false,
                   url: '/send_message',
                   type: 'POST',
-                  dataType: 'json',
                   data: JSON.stringify({ data: data })
-                  }).done(function() {
-                    // TO DO: troubleshoot -- doesn't work in Flask.
+                }).done(function() {
                     setTimeout(function(){ sequencer() }, 3000)
                 })
               })

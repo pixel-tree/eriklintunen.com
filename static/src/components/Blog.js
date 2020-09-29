@@ -8,11 +8,6 @@ import { sequencer } from '../Utils'
 class Blog {
   constructor(container) {
 
-    // Currently missing (decide whether to archive or include in live build):
-    // 140520: The expressive power of the (digital) line
-    // 270420: A case for postdramatic theatre
-    // New math blog
-
     // Generate content but skip first object (template).
     for (let i = 1; i < text.blog.length; i++) {
 
