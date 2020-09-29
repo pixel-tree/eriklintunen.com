@@ -28,7 +28,7 @@ class Contact {
     ]
 
     const hello = 'Please leave your message below. Encrypted using PGP (:' +
-      '\n' + '\n' + 'YES / NO (for alternatives)' + '\n'
+      '\n' + '\n' + '(Y)ES / (N)O (for alternatives)' + '\n'
 
     let jQuery = require('jquery.terminal')
     let openpgp = require('openpgp')
