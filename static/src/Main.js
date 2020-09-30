@@ -60,19 +60,19 @@ const mobile = new Mobile(playground)
 
 if (env !== 'development') {
 
-  // TO DO: troubleshoot file loading for dev-server.
-  require('../media/visual/neural.gif')
-  require('../media/visual/xd.jpg')
-  require('../media/visual/xd_inv.jpg')
-  require('../media/visual/resume.jpg')
-  require('../media/visual/resume_inv.jpg')
-
   // animate()
   sequencer()
 
 } else {
 
   console.log('Development mode.')
+
+  // TO DO: troubleshoot file loading for dev-server.
+  require('../media/visual/neural.gif')
+  require('../media/visual/xd.jpg')
+  require('../media/visual/xd_inv.jpg')
+  require('../media/visual/resume.jpg')
+  require('../media/visual/resume_inv.jpg')
 
   sequencer()
 

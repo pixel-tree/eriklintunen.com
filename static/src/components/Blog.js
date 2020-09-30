@@ -8,6 +8,9 @@ import { sequencer } from '../Utils'
 class Blog {
   constructor(container) {
 
+    // Main frame.
+    const content = document.getElementById('content')
+
     // Generate content but skip first object (template).
     for (let i = 1; i < text.blog.length; i++) {
 

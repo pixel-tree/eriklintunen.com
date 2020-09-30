@@ -7,6 +7,9 @@ import { text, visual } from '../Main'
 class About {
   constructor(container) {
 
+    // Main frame.
+    const content = document.getElementById('content')
+
     // Image.
     const neural = document.createElement('img')
     neural.src = visual.about.path

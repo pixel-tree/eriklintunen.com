@@ -11,6 +11,9 @@ import { sequencer } from '../Utils'
 class Contact {
   constructor(container) {
 
+    // Main frame.
+    const content = document.getElementById('content')
+
     // Frame.
     this._element = document.createElement('div')
     this._element.id = 'terminal'

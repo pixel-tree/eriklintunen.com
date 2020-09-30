@@ -8,6 +8,9 @@ import { sequencer } from '../Utils'
 class Works {
   constructor(container) {
 
+    // Main frame.
+    const content = document.getElementById('content')
+
     // Images.
     const xd = document.createElement('img')
     xd.src = visual.works.xd.path
@@ -49,6 +52,9 @@ class Works {
 class XD {
   constructor(container) {
 
+    // Main frame.
+    const content = document.getElementById('content')
+
     // Title.
     const header = document.createElement('div')
     header.classList.add('workHeader')
@@ -82,6 +88,9 @@ class XD {
 
 class Resume {
   constructor(container) {
+
+    // Main frame.
+    const content = document.getElementById('content')
 
     // Title.
     const header = document.createElement('div')
