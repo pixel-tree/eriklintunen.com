@@ -3,7 +3,6 @@
  */
 
 import { text, visual } from '../Main'
-import { sequencer } from '../Utils'
 
 class Blog {
   constructor(container) {
@@ -33,9 +32,16 @@ class Blog {
         paragraph.innerHTML = text.blog[i].body[j]
         body.appendChild(paragraph)
 
+        // TO DO: run links and media loops outside of paragraph loop
+        // No need to run individually for each paragraph
+        // Run once after j loop (inside i loop):
+        // const replacement = content.innerHTML.replace (...)
+        // content.innerHTML = replacement
+        // Also check other scripts for same...
+
         // If links included.
         if (text.blog[i].links.length > 0) {
-          // Replace markers ([1], [2], ...) for links and descriptions.
+          // Replace markers ([1], [2], ...) with links and descriptions.
           for (let k = 0; k < text.blog[i].links.length; k++) {
             const link = Object.values(text.blog[i].links[k])
             const description = Object.keys(text.blog[i].links[k])
@@ -49,7 +55,7 @@ class Blog {
 
         // If visual media included.
         if (text.blog[i].media.length > 0) {
-          // Replace markers ({1}, {2}, ...) for images and descriptions.
+          // Replace markers ({1}, {2}, ...) with images and descriptions.
           for (let k = 0; k < text.blog[i].media.length; k++) {
             const path = Object.values(text.blog[i].media[k])
             const alt = Object.keys(text.blog[i].media[k])
