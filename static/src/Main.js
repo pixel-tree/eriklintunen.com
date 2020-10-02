@@ -73,6 +73,7 @@ if (env !== 'development') {
   require('../media/visual/xd_inv.jpg')
   require('../media/visual/resume.jpg')
   require('../media/visual/resume_inv.jpg')
+  require('../media/visual/gpu.jpg')
 
   sequencer()
 

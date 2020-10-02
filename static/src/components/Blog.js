@@ -41,7 +41,22 @@ class Blog {
             const description = Object.keys(text.blog[i].links[k])
             const replacement = paragraph.innerHTML.replace(
               '[' + (k + 1) + ']',
-              '<a target="_blank" rel="noopener" href="' + link + '">' + description + '</a>')
+              '<a target="_blank" rel="noopener" href="' + link + '">' + description + '</a>'
+            )
+            paragraph.innerHTML = replacement
+          }
+        }
+
+        // If visual media included.
+        if (text.blog[i].media.length > 0) {
+          // Replace markers ({1}, {2}, ...) for images and descriptions.
+          for (let k = 0; k < text.blog[i].media.length; k++) {
+            const path = Object.values(text.blog[i].media[k])
+            const alt = Object.keys(text.blog[i].media[k])
+            const replacement = paragraph.innerHTML.replace(
+              '{' + (k + 1) + '}',
+              '<img class="blogImage" src="' + path + '" alt="' + alt + '">'
+            )
             paragraph.innerHTML = replacement
           }
         }
