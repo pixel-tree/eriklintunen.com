@@ -49,9 +49,12 @@ const content = document.createElement('div')
 content.id = 'content'
 playground.appendChild(content)
 
-const footer = document.createElement('div')
+const footer = document.createElement('a')
+footer.setAttribute('href', 'https://github.com/pixel-tree')
+footer.setAttribute('target', '_blank')
+footer.setAttribute('rel', 'noopener')
 footer.id = 'footer'
-footer.innerText = '© 2020 Erik Lintunen'
+footer.innerText = '© 2020 pixel-tree'
 playground.appendChild(footer)
 
 const mobile = new Mobile(playground)

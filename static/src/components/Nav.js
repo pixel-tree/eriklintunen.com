@@ -31,7 +31,17 @@ class Nav {
       const li = document.createElement('li')
       li.innerText = items[i]
 
+      if (document.getElementById('page').content === li.innerHTML) {
+        li.classList.add('liActive')
+      }
+
       li.onclick = function() {
+
+        for (let j = 0; j < ol.children.length; j++) {
+          ol.children[j].classList.remove('liActive')
+        }
+        li.classList.add('liActive')
+
         if (document.getElementById('page').content !== this.innerHTML) {
           document.getElementById('page').content = this.innerHTML
           sequencer()

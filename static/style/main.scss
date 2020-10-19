@@ -4,28 +4,43 @@ $black: rgb(0, 0, 0);
 $white: rgb(255, 255, 255);
 $grayA: rgba(169, 169, 169, 0.3);
 
-$N: adReg;
-$B: adBold;
-$I: adItalic;
+$N: agReg;
+$B: agBold;
+$I: agItalic;
+
+$title: adTitle;
+$link: adLink;
 
 /* Fonts */
 
 @font-face {
-	font-family: adReg;
-	src: url('../media/fonts/AD-Regular.woff') format('woff'),
-	     url('../media/fonts/AD-Regular.ttf') format('truetype');
-}
-
-@font-face {
-	font-family: adBold;
+	font-family: adTitle;
 	src: url('../media/fonts/AD-Bold.woff') format('woff'),
 	     url('../media/fonts/AD-Bold.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: adItalic;
+	font-family: adLink;
 	src: url('../media/fonts/AD-Italic.woff') format('woff'),
 	     url('../media/fonts/AD-Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: agReg;
+	src: url('../media/fonts/AG-Regular.woff') format('woff'),
+	     url('../media/fonts/AG-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: agBold;
+	src: url('../media/fonts/AG-Bold.woff') format('woff'),
+	     url('../media/fonts/AG-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: agItalic;
+	src: url('../media/fonts/AG-Italic.woff') format('woff'),
+	     url('../media/fonts/AG-Italic.ttf') format('truetype');
 }
 
 /* Shared */
@@ -39,7 +54,7 @@ body, #playground {
 }
 
 #extLink {
-	position: absolute;
+	position: fixed;
 	top: 1.5vh;
 	right: 1.2vw;
 	text-decoration: none;
@@ -53,13 +68,13 @@ body, #playground {
 }
 
 #nav {
+	position: fixed;
 	width: 600px;
-	height: 42px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 9vh;
-	margin-bottom: 3vh;
+	height: 30px;
+	padding-top: 1.5vh;
+	padding-bottom: 3vh;
+	margin-left: 1.2vw;
+	background-color: $white;
 }
 
 #ol {
@@ -79,8 +94,8 @@ body, #playground {
 }
 
 li {
-	font-family: $I;
-	text-transform: uppercase;
+	font-family: $N;
+	text-transform: capitalize;
 	font-size: 12px;
 	letter-spacing: 1.5px;
 	color: $black;
@@ -88,17 +103,19 @@ li {
 	cursor: pointer;
 }
 
+.liActive {
+	font-family: $B;
+}
+
 #content {
 	width: 600px;
-	height: 72vh;
 	display: flex;
 	flex-direction: column;
-	margin-left: auto;
-	margin-right: auto;
+	padding-top: 30px;
+	margin-top: 5.7vh;
+	margin-left: 1.2vw;
 	align-items: center;
 	justify-content: flex-start;
-	overflow-x: hidden;
-	overflow-y: scroll;
 	p {
 		text-align: justify;
 		font-family: $N;
@@ -113,31 +130,20 @@ li {
 	display: none;
 }
 
-#content::-webkit-scrollbar, #contentMin::-webkit-scrollbar {
-	display: none;
-}
-#content, #contentMin {
-	-ms-overflow-style: none;
-	scrollbar-width: none;
-}
-
 #footer {
-	width: 600px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	margin-top: 3vh;
-	padding-bottom: 1vh;
-	font-family: $N;
+	position: fixed;
+	right: 1.2vw;
+	bottom: 1.5vh;
+	font-family: $I;
 	font-size: 12px;
 	letter-spacing: 0.6px;
 	color: $black;
 	text-shadow: 0.3px 0.3px $grayA;
+	writing-mode: vertical-rl;
 }
 
 a {
-	font-family: $I;
+	font-family: $link;
 	text-decoration: none;
 	color: inherit;
 }
@@ -171,14 +177,6 @@ a:hover {
 	cursor: pointer;
 }
 
-.xdTitle {
-
-}
-
-.xdBody {
-
-}
-
 .workHeader {
 	text-align: center;
 	font-family: $N;
@@ -193,7 +191,7 @@ a:hover {
 	width: 600px;
 	padding-top: 30px;
 	text-align: left;
-	font-family: $B;
+	font-family: $title;
 	font-size: 15px;
 	letter-spacing: 0.9px;
 	color: $black;
@@ -229,16 +227,12 @@ a:hover {
 	}
 }
 
-.venue {
-
-}
-
 /* Blog */
 
 .blogTitle {
 	width: 100%;
 	text-align: left;
-	font-family: $B;
+	font-family: $title;
 	font-size: 15px;
 	letter-spacing: 0.9px;
 	color: $black;
@@ -261,7 +255,7 @@ a:hover {
 	background-image: url('../media/visual/noise.gif');
 }
 
-/* Animate (NOT IN USE!) */
+/* NOT IN USE */
 
 #cursor {
 	width: 300px;
@@ -282,7 +276,7 @@ a:hover {
 
 /* Mobile */
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 768px) {
 
 	#playground {
 		background-image: url('../media/visual/noise_min.gif');
@@ -296,9 +290,12 @@ a:hover {
 
 	#nav {
 		width: 80vw;
-		padding-top: 3vh;
+		position: relative;
+		padding-top: 12vh;
+		margin-bottom: 4.2vh;
+		margin-left: auto;
+		margin-right: auto;
 		order: 1;
-
 	}
 
 	#ol {
@@ -320,9 +317,8 @@ a:hover {
 
 	li {
 		width: 80vw;
-		border: 1.8px solid $black;
+		border: 1.2px solid $black;
 		padding: 2.1vw;
-		font-family: $B;
 		text-align: center;
 	}
 
@@ -347,8 +343,12 @@ a:hover {
 	}
 
 	#footer {
-		width: 80vw;
+		font-family: $N;
+		text-align: center;
+		writing-mode: horizontal-tb;
 		order: 3;
+		position: relative;
+		padding-top: 6vh;
 	}
 
 }
