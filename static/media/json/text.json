@@ -531,6 +531,23 @@
       ]
     },
     {
+      "date": "161020",
+      "title": "About Cloudy Logic",
+      "body": [
+        "Information on my project [1]."
+      ],
+      "links": [
+        {
+          "Cloudy Logic": "https://cloudylogic.space/about"
+        }
+      ],
+      "media": [
+        {
+          "": ""
+        }
+      ]
+    },
+    {
       "date": "071020",
       "title": "Treasures of the internet #2",
       "body": [
@@ -568,7 +585,7 @@
       "date": "230720",
       "title": "RCA2020",
       "body": [
-        "My artwork [1] is now public as part of [2]. I'm so honoured to have my project featured in the collections [3] and [4] curated by Anna Ridler and John Maeda respectively. Also check out our own [5]."
+        "My artwork [1] is now public as part of [2]. I'm honoured to have my project featured in two collections: [3] and [4], curated by Anna Ridler and John Maeda respectively. Also check out our own [5]."
       ],
       "links": [
         {
