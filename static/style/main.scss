@@ -95,7 +95,7 @@ body, #playground {
 
 li {
 	font-family: $N;
-	text-transform: capitalize;
+	text-transform: lowercase;
 	font-size: 12px;
 	letter-spacing: 1.5px;
 	color: $black;
@@ -111,7 +111,7 @@ li {
 	width: 600px;
 	display: flex;
 	flex-direction: column;
-	padding-top: 30px;
+	padding-top: 45px;
 	margin-top: 5.7vh;
 	margin-left: 1.2vw;
 	align-items: center;
@@ -134,12 +134,15 @@ li {
 	position: fixed;
 	right: 1.2vw;
 	bottom: 1.5vh;
-	font-family: $I;
-	font-size: 12px;
+	font-family: $N;
+	font-size: 10px;
 	letter-spacing: 0.6px;
 	color: $black;
 	text-shadow: 0.3px 0.3px $grayA;
-	writing-mode: vertical-rl;
+	opacity: 0.6;
+}
+#footer:hover {
+	opacity: 1;
 }
 
 a {
@@ -153,13 +156,7 @@ a:hover {
 
 /* About */
 
-#neural {
-	order: 1;
-}
-
 #bio {
-	order: 2;
-	margin-top: 21px;
 }
 
 /* Works */
