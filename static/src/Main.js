@@ -1,14 +1,11 @@
 /**
- * Main JS for eriklintunen.com.
- * pixel-tree, 2020.
+ * eriklintunen.com
+ * pixel-tree, 2021
  */
 
-import '../style/main.scss'
+import '../styles.scss'
 
-import { sequencer } from './Utils'
-
-import { Mobile } from './components/Mobile'
-import { Nav } from './components/Nav'
+import { Init, Bg, Socials, Footer, Nav, Media, sequencer } from './Utils'
 
 /* Metadata */
 
@@ -18,68 +15,49 @@ let page = document.createElement('meta')
 page.id = 'page'
 document.head.appendChild(page)
 
-page.content = 'about' // Default load page.
+page.content = 'portfolio'  // Default load page
 
 /* Load data */
 
-const text = require('../media/json/text.json')
-const visual = require('../media/json/visual.json')
+const data = require('../media/data.json')
 
-/* Main frame */
+/* Main frames */
 
 const playground = document.createElement('div')
 playground.id = 'playground'
+playground.style.display = 'none'
 document.body.appendChild(playground)
 
-/* Rotational content */
-
-const extLink = document.createElement('a')
-extLink.setAttribute('href', text.latest)
-extLink.setAttribute('target', '_blank')
-extLink.setAttribute('rel', 'noopener')
-extLink.id = 'extLink'
-extLink.innerText = '¯\\_(ツ)_/¯'
-playground.appendChild(extLink)
+const scrollbox = document.createElement('div')
+scrollbox.id = 'scrollbox'
+playground.appendChild(scrollbox)
 
 /* Shared elements */
 
+const bg = new Bg(playground)
+const socials = new Socials(playground)
 const navigation = new Nav(playground)
+const footer = new Footer(playground)
+
+/* Main content */
 
 const content = document.createElement('div')
 content.id = 'content'
-playground.appendChild(content)
+scrollbox.appendChild(content)
 
-const footer = document.createElement('a')
-footer.setAttribute('href', 'https://github.com/pixel-tree')
-footer.setAttribute('target', '_blank')
-footer.setAttribute('rel', 'noopener')
-footer.id = 'footer'
-footer.innerText = '© 2020 pixel-tree'
-playground.appendChild(footer)
+/* Initialise */
 
-const mobile = new Mobile(playground)
-
-/* Initialise page */
-
-if (env !== 'development') {
-
-  // animate()
-  sequencer()
-
-} else {
+if (env === 'development') {
 
   console.log('Development mode.')
 
-  // TO DO: troubleshoot file loading for dev-server.
-  require('../media/visual/xd.jpg')
-  require('../media/visual/xd_inv.jpg')
-  require('../media/visual/resume.jpg')
-  require('../media/visual/resume_inv.jpg')
-  require('../media/visual/gpu.jpg')
-  require('../media/visual/loveable.jpg')
+  // to do: troubleshoot file loading for dev server.
+  const loader = new Media()
 
+  const $ = require('jquery')
+  $('#playground').show()
   sequencer()
 
-}
+} else { const init = new Init(document.body) }
 
-export { text, visual }
+export { data }

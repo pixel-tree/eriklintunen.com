@@ -1,5 +1,5 @@
 /**
- * Webpack config file.
+ * Webpack main config.
  */
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -36,11 +36,9 @@ module.exports = {
         ],
       },
       {
-        test: /\.css$/i,
-        use: [
-          'style-loader',
-          'css-loader'],
-      },
+				test: /\.(jpg|png|gif|svg)$/,
+				loader: 'file-loader?name=./media/files/[name].[ext]',
+			},
       {
         test: /\.txt$/i,
         use: 'raw-loader',

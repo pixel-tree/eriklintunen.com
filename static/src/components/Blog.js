@@ -2,71 +2,79 @@
  * Blog page.
  */
 
-import { text, visual } from '../Main'
+import { data } from '../Main'
+import { sequencer } from '../Utils'
 
 class Blog {
   constructor(container) {
 
-    // Main frame.
+    // Content frame.
     const content = document.getElementById('content')
 
-    // Generate content but skip first object (template).
-    for (let i = 1; i < text.blog.length; i++) {
+    // Quote.
+    const quote = document.createElement('div')
+    quote.id = 'quote'
+    content.appendChild(quote)
+
+    for (let i = 0; i < data.blogQ.length; i++) {
+      // Paragraphs.
+      let paragraph = document.createElement('p')
+      paragraph.innerHTML = data.blogQ[i]
+      quote.appendChild(paragraph)
+    }
+
+    // Generate content.
+    for (let i = 0; i < data.blog.length; i++) {
+
+      // Sections.
+      let section = document.createElement('div')
+      section.classList.add('blogEntry')
+      content.appendChild(section)
 
       // Entry header (date: title).
       const title = document.createElement('div')
       title.classList.add('blogTitle')
-      title.innerText = text.blog[i].date + ': ' + text.blog[i].title
-      content.appendChild(title)
+      title.innerText = data.blog[i].date + ': ' + data.blog[i].title
+      section.appendChild(title)
 
       // Main body.
       const body = document.createElement('div')
       body.classList.add('blogBody')
-      content.appendChild(body)
+      section.appendChild(body)
 
-      // Generate individual paragraphs.
-      for (let j = 0; j < text.blog[i].body.length; j++) {
+      // Individual paragraphs.
+      for (let j = 0; j < data.blog[i].body.length; j++) {
+          let paragraph = document.createElement('p')
+          paragraph.innerHTML = data.blog[i].body[j]
+          body.appendChild(paragraph)
+      }
 
-        // Text.
-        const paragraph = document.createElement('p')
-        paragraph.innerHTML = text.blog[i].body[j]
-        body.appendChild(paragraph)
-
-        // TO DO: run links and media loops outside of paragraph loop
-        // No need to run individually for each paragraph
-        // Run once after j loop (inside i loop):
-        // const replacement = content.innerHTML.replace (...)
-        // content.innerHTML = replacement
-        // Also check other scripts for same...
-
-        // If links included.
-        if (text.blog[i].links.length > 0) {
-          // Replace markers ([1], [2], ...) with links and descriptions.
-          for (let k = 0; k < text.blog[i].links.length; k++) {
-            const link = Object.values(text.blog[i].links[k])
-            const description = Object.keys(text.blog[i].links[k])
-            const replacement = paragraph.innerHTML.replace(
-              '[' + (k + 1) + ']',
-              '<a target="_blank" rel="noopener" href="' + link + '">' + description + '</a>'
-            )
-            paragraph.innerHTML = replacement
-          }
+      // Replace markers {index} with visual media.
+      if (typeof data.blog[i].media !== "undefined"
+      && data.blog[i].media.length > 0) {
+        for (let j = 0; j < data.blog[i].media.length; j++) {
+          let path = Object.values(data.blog[i].media[j])
+          let alt = Object.keys(data.blog[i].media[j])
+          let replacement = body.innerHTML.replace(
+            '{' + (j + 1) + '}',
+            '<img class="image" src="' + path + '" alt="' + alt + '">'
+          )
+          body.innerHTML = replacement
         }
+      }
 
-        // If visual media included.
-        if (text.blog[i].media.length > 0) {
-          // Replace markers ({1}, {2}, ...) with images and descriptions.
-          for (let k = 0; k < text.blog[i].media.length; k++) {
-            const path = Object.values(text.blog[i].media[k])
-            const alt = Object.keys(text.blog[i].media[k])
-            const replacement = paragraph.innerHTML.replace(
-              '{' + (k + 1) + '}',
-              '<img class="blogImage" src="' + path + '" alt="' + alt + '">'
-            )
-            paragraph.innerHTML = replacement
-          }
+      // Replace markers [index] with links.
+      if (typeof data.blog[i].links !== "undefined"
+      && data.blog[i].links.length > 0) {
+        for (let j = 0; j < data.blog[i].links.length; j++) {
+          let url = Object.values(data.blog[i].links[j])
+          let intext = Object.keys(data.blog[i].links[j])
+          let replacement = body.innerHTML.replace(
+            '[' + (j + 1) + ']',
+            '<a target="_blank" rel="noopener" href="' + url + '">' + intext + '</a>'
+          )
+          body.innerHTML = replacement
         }
-
       }
 
     }

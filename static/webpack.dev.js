@@ -1,5 +1,5 @@
 /**
- * Dev server config file.
+ * Dev server config.
  */
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -16,17 +16,5 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
-  },
-  module: {
-    rules: [
-      {
-				test: /\.(jpg|png|gif|svg)$/,
-				loader: 'file-loader?name=./media/visual/[name].[ext]',
-			},
-      {
-				test: /\.(ttf|eot|woff(2)?)(\?[a-z0-9]+)?$/,
-				loader: 'file-loader?name=./media/fonts/[name].[ext]',
-			},
-    ],
   },
 });

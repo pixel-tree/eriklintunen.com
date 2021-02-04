@@ -2,10 +2,9 @@
  * Contact page.
  */
 
-import '../../style/terminal.scss'
+import '../../terminal.scss'
 
-import PGP from '../../media/text/pgp.txt'
-import { text } from '../Main'
+import PGP from '../../media/pgp.txt'
 import { sequencer } from '../Utils'
 
 class Contact {
@@ -23,15 +22,13 @@ class Contact {
      * Terminal.
      */
 
-    const commands = [
+    const forbidden = [
       '',
-      'reset', 'Reset', 'RESET',
-      'yes', 'Yes', 'YES', 'y', 'Y',
-      'no', 'No', 'NO', 'n', 'N'
+      'reset', 'Reset', 'RESET'
     ]
 
-    const hello = 'Please leave your message below. Encrypted using PGP (:' +
-      '\n' + '\n' + '(Y)ES to proceed / (N)O for alternatives' + '\n'
+    const hello = 'Please leave your message below. Encrypted using PGP (:'
+                  + '\n' + '\n' + 'Enter your name:' + '\n'
 
     let jQuery = require('jquery.terminal')
     let openpgp = require('openpgp')
@@ -43,34 +40,27 @@ class Contact {
     jQuery(function($, undefined) {
       $('#terminal').terminal(function(command) {
 
-        // Yes / no to leave message.
-        if (phase === 0 && commands.slice(4, 9).includes(command)) {
-          // yes
-          phase += 1
-          this.echo(String('\n' + 'Enter your name:' + '\n'))
-        } else if (phase === 0 && commands.slice(9, 14).includes(command)) {
-          // no
-          this.echo(String('\n' + PGP))
-          this.echo(String('\n' + text.contact.mail + '\n'))
+        /*
+         * Sequencer.
+         * Triggered by entering name...
+         */
 
-        }
-
-        // If entry not in commands array.
-        if (!commands.includes(command)) {
-          if (phase === 1) {
+        // If entry not in forbidden array...
+        if (!forbidden.includes(command)) {
+          if (phase === 0) {
             phase += 1
             // Name stored to data[0].
             data[0] = command
-            this.echo(String('\n' + 'Enter your contact details:' + '\n'))
-          } else if (phase === 2) {
+            this.echo(String('\n' + 'Contact details:' + '\n'))
+          } else if (phase === 1) {
             phase += 1
             // Contact details stored to data[1].
             data[1] = command
-            this.echo(String('\n' + 'Your message (SHIFT + ENTER for line break):' + '\n'))
-          } else if (phase === 3) {
+            this.echo(String('\n' + 'Message (SHIFT+ENTER for line break):' + '\n'))
+          } else if (phase === 2) {
             // Reset counter.
             phase = 0
-
+            // Encrypt message.
             const message = async() => {
               const pubKey = PGP
               const options = {
@@ -93,13 +83,13 @@ class Contact {
 
             }
 
-            message() // Encrypt and send message.
-            this.echo(String('\n' + 'Thanks for your message!' + '\n'))
+            message()  // Send message.
+            this.echo(String('\n' + '[[i;;]Thanks for your message!]' + '\n'))
           }
         }
 
         // Reset.
-        else if (commands.slice(1, 4).includes(command)) {
+        else if (forbidden.slice(1, 4).includes(command)) {
           sequencer()
         }
 
@@ -107,7 +97,7 @@ class Contact {
       {
         name: 'Erik',
         greetings: hello,
-        prompt: '~> '
+        prompt: '> '
       })
     })
 
