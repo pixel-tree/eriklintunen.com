@@ -119,7 +119,7 @@
         "Meursault -- the protagonist of <i>The Outsider</i> (Albert Camus, 1942) -- is lost in time and space. He moves through dreamy, binaural soundscapes, and gradually reconstructs his story.",
         "{3}",
         "Staged utilising an experimental technical set-up, the work explores human-object entanglements in our post-digital world.",
-        "<div style='padding:56.25% 0 0 0;position:relative;'><iframe src='https://player.vimeo.com/video/246015457' class='media' style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe></div><script src='https://player.vimeo.com/api/player.js'></script>",
+        "<div style='padding:56.25% 0 0 0;position:relative;'><iframe src='https://player.vimeo.com/video/246015457' class='media' style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen'></iframe></div><script src='https://player.vimeo.com/api/player.js'></script>",
         "Performed at [1], London. Broadcast on [2]/[3], worldwide. Commissioned as part of [4], kindly supported by [5]."
       ],
       "media": [
@@ -161,7 +161,7 @@
         "Bacteria RNG. Created as part of [1]'s <i>Bacteria as a Digital Mediator</i>. TL;DR: images from a live feed of cultivated bacteria are hashed and used to seed a pseudo-random number generator.",
         "{3}",
         "Latent Space Interpolations. Investigating visual representations of migration online using GANs.",
-        "<div style='padding:56.25% 0 0 0;position:relative;'><iframe src='https://player.vimeo.com/video/485687760?transparent=0' class='media' style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe></div><script src='https://player.vimeo.com/api/player.js'></script>",
+        "<div style='padding:56.25% 0 0 0;position:relative;'><iframe src='https://player.vimeo.com/video/485687760?transparent=0' class='media' style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen'></iframe></div><script src='https://player.vimeo.com/api/player.js'></script>",
         "Gymnopaedia Exercise Number 1. Developed for an exhibition of works by [2]. Browser application: AI trained on MIDI data extracted from religious folksong (call-and-response interaction).",
         "{4}",
         "R script for calculating probabilities by integration (find p.d.f. of arbitrary function; standardise normal random variables; compute probabilities). I intend to add further functionality, e.g., double integrals and hence joint probabilities.",
@@ -304,7 +304,7 @@
       "title": "A Dog's Dream",
       "body": [
         "A binaural story about insomnia and isolation. Featured as part of YOU, Resonance Extra & YouTube, 12th December 2020.",
-        "<div style='padding:56.25% 0 0 0;position:relative;'><iframe src='https://player.vimeo.com/video/490400695' style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen' allowfullscreen></iframe></div><script src='https://player.vimeo.com/api/player.js'></script>"
+        "<div style='padding:56.25% 0 0 0;position:relative;'><iframe src='https://player.vimeo.com/video/490400695' style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen'></iframe></div><script src='https://player.vimeo.com/api/player.js'></script>"
       ],
       "links": [
         {
