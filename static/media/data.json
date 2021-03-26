@@ -295,6 +295,26 @@
 
   "blog": [
     {
+      "date": "260321",
+      "title": "Conversations in VR",
+      "body": [
+        "Stumbled across [1]. For as long as I can remember, I've sought out communities online -- message boards, MMORPGs, and otherwise obscure corners of the internet. There is something awesome about humans coming together, empowered by their anonymity and the ephemerality of online identity, to share their stories. Stylistically, the channel is very [2], like it or not. That is to say, me sharing ≠ an implicit endorsement of any content; but something about it is captivating (a feeling that I can't put into words at this time of night). Maybe it's the avatars..."
+      ],
+      "links": [
+        {
+          "Syrmor": "https://www.youtube.com/channel/UCV8Qe8z3RDLiAV7E0WP7-Fg"
+        },
+        {
+          "HONY": "https://www.facebook.com/humansofnewyork"
+        }
+      ],
+      "media": [
+        {
+          "": ""
+        }
+      ]
+    },
+    {
       "date": "121220",
       "title": "A Dog's Dream",
       "body": [
