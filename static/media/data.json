@@ -2,10 +2,9 @@
 
   "init": "lintunen_erik.init()",
 
+  "cv": "./media/files/vibing.png",
+
   "socials": [
-    {
-      "CV": "https://eriklintunen.com/hidden/cv.pdf"
-    },
     {
       "GitHub": "https://github.com/pixel-tree"
     },

@@ -88,6 +88,33 @@ p.initcursor::after {
   display: block;
 }
 
+#cv {
+	all: unset;
+	cursor: pointer;
+}
+
+#cv:hover {
+	text-decoration: underline;
+}
+
+#overlay {
+   position: fixed;
+   height: 100%;
+   width: 100%;
+	 background: rgba(0,0,0,0.9);
+	 display: none;
+	 z-index: 999;
+}
+
+#vibing {
+   max-width: 768px;
+   width: 60%;
+	 position: absolute;
+   left: 50%;
+	 top: 50%;
+	 transform: translate(-50%, -50%);
+}
+
 #footer {
 	position: fixed;
   left: 1vw;
@@ -335,6 +362,10 @@ a:hover {
 
 	#scrollbox {
 		align-items: flex-end;
+	}
+
+	#vibing {
+	   width: 100%;
 	}
 
 	#content {

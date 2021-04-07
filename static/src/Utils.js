@@ -189,8 +189,18 @@ class Socials {
     // Main frame.
     const playground = document.getElementById('playground')
 
+    // Frame for links.
     const socials = document.createElement('div')
     socials.id = 'socials'
+
+    // CV button.
+    const cv = document.createElement('button')
+    cv.id = 'cv'
+    cv.setAttribute('class', 'social')
+    cv.innerText = 'CV'
+    socials.appendChild(cv)
+
+    // Generate socials.
     for (let i = 0; i < data.socials.length; i++) {
       let social = document.createElement('a')
       social.setAttribute('class', 'social')
@@ -201,6 +211,31 @@ class Socials {
       socials.appendChild(social)
     }
     playground.appendChild(socials)
+
+    // CV overlay.
+
+    const $ = require('jquery')
+
+    const overlay = document.createElement('div')
+    overlay.id = 'overlay'
+    playground.appendChild(overlay)
+
+    const vibing = document.createElement('img')
+    vibing.id = 'vibing'
+    vibing.src = data.cv
+    overlay.appendChild(vibing)
+
+    $('#cv').click(function() {
+      if ($('#playground').hasClass('light')) {
+        $('#overlay').css('filter', 'invert(100%)')
+      }
+      $('#overlay').show()
+    })
+
+    $('#overlay').click(function() {
+      $('#overlay').hide()
+      $('#overlay').css('filter', '')
+    })
 
   }
 }
@@ -285,7 +320,8 @@ class Nav {
 
 class Media {
   constructor() {
-
+    // CV.
+    require('../media/files/vibing.png')
     // Portfolio.
     require('../media/files/cl.png')
     require('../media/files/pythia.gif')
