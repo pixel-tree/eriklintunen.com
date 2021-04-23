@@ -297,6 +297,23 @@
 
   "blog": [
     {
+      "date": "230421",
+      "title": "NLP learning",
+      "body": [
+        "Today I cleaned up [1] that I was working on earlier this year. Clustering academic research by content using TF*IDF, PCA and t-SNE."
+      ],
+      "links": [
+        {
+          "a small project": "http://34.121.78.114/"
+        }
+      ],
+      "media": [
+        {
+          "": ""
+        }
+      ]
+    },
+    {
       "date": "070421",
       "title": "Imaginary friends",
       "body": [
