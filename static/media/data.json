@@ -154,111 +154,114 @@
       "year": "2015-2021",
       "id": "Experiments",
       "body": [
-        "{1}",
-        "NLP, dimensionality reduction and clustering. Here, documents are tokenised by n-grams; processed using TF*IDF, PCA and t-SNE. Visualised using D3.js.",
-        "{2}",
-        "Bacteria RNG. Created as part of [1]'s <i>Bacteria as a Digital Mediator</i>. TL;DR: images from a live feed of cultivated bacteria are hashed and used to seed a pseudo-random number generator.",
-        "{3}",
+        "{18}",
+        "NLP learning. Here, written documents are tokenised by n-grams; processed using TF*IDF, PCA and t-SNE. Visualised using D3.js. [13].",
+        "{17}",
+        "Bacteria RNG. Created as part of [12]'s <i>Bacteria as a Digital Mediator</i>. TL;DR: images from a live feed of cultivated bacteria are hashed and used to seed a pseudo-random number generator.",
+        "{16}",
         "Latent Space Interpolations. Investigating visual representations of migration online using GANs.",
         "<div style='padding:56.25% 0 0 0;position:relative;'><iframe src='https://player.vimeo.com/video/485687760?transparent=0' class='media' style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen'></iframe></div><script src='https://player.vimeo.com/api/player.js'></script>",
-        "Gymnopaedia Exercise Number 1. Developed for an exhibition of works by [2]. Browser application: AI trained on MIDI data extracted from religious folksong (call-and-response interaction).",
-        "{4}",
-        "R script for calculating probabilities by integration (find p.d.f. of arbitrary function; standardise normal random variables; compute probabilities). I intend to add further functionality, e.g., double integrals and hence joint probabilities.",
-        "{5}",
+        "Gymnopaedia Exercise Number 1. Developed for an exhibition of works by [11]. Browser application: AI trained on MIDI data extracted from religious folksong (call-and-response interaction).",
+        "{15}",
+        "R scripts to consolidate learning in maths and stats (e.g., p.d.f. by integration, standardise normal random variables, compute probabilities, Euclid's algorithm, etc.).",
+        "{14}",
         "Data physicalisation. In this example, EEG data are translated into hues of light.",
-        "{6}",
-        "{7}",
-        "{8}",
-        "Sound experiments (interactive systems for theatre and live-art; broad experimentation across platforms and media). Included below is a small selection of images to represent these projects.",
-        "{9}",
-        "Barbican Open Lab. Space and mentorship for experimentation with no expectation of a finalised piece of work. In collaboration with [3] and [4].",
-        "{10}",
+        "{13}",
+        "{12}",
         "{11}",
+        "Sound experiments (interactive systems for theatre and live-art; broad experimentation across platforms and media). Included below is a small selection of images to represent these projects.",
+        "{10}",
+        "Barbican Open Lab. Space and mentorship for experimentation with no expectation of a finalised piece of work. In collaboration with [9] and [10].",
+        "{9}",
+        "{8}",
         "<iframe width='100%' height='166' class='media' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/386716187%3Fsecret_token%3Ds-Eo6uN&color=%232d352c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe>",
         "<iframe width='100%' height='166' class='media' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/401148816%3Fsecret_token%3Ds-RNbzT&color=%232d352c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe>",
         "<iframe width='100%' height='166' class='media' scrolling='no' frameborder='no' allow='autoplay' src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/437813991%3Fsecret_token%3Ds-9X4RG&color=%232d352c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true'></iframe>",
-        "Bedtime Monologues. Semi-improvised radio performances in collaboration with [5], [6] and [7].",
-        "{12}",
-        "{13}",
-        "Pixel Tears. Theatre performance in which physical space was divided into smaller virtual sections using headphone playback. Written and performed by [8].",
-        "{14}",
-        "Another Bald Dead Woman. Performed at SPILL Festival. The stage was transformed into an instrument with sensors -- used to sequence and manipulate sounds through performer movement. Written by [9].",
-        "{15}",
-        "{16}",
-        "Remote broadcasting. As part of these projects, a temporary radio station is constructed somewhere (typically, in a public space). I have experience working on numerous large-scale projects, including at [10], [11], [12], and others.",
-        "{17}",
+        "Bedtime Monologues. Semi-improvised radio performances in collaboration with [6], [7] and [8].",
+        "{7}",
+        "{6}",
+        "Pixel Tears. Theatre performance in which physical space was divided into smaller virtual sections using headphone playback. Written and performed by [5].",
+        "{5}",
+        "Another Bald Dead Woman. Performed at SPILL Festival. The stage was transformed into an instrument with sensors -- used to sequence and manipulate sounds through performer movement. Written by [4].",
+        "{4}",
+        "{3}",
+        "Remote broadcasting. As part of these projects, a temporary radio station is constructed somewhere (typically, in a public space). I have experience working on numerous large-scale projects, including at [1], [2], [3], and others.",
+        "{2}",
         "Workshops and teaching. I've hosted workshops for my student peers; formally taught interaction design; developed and led community workshops.",
-        "{18}",
+        "{1}",
         "Not forgetting where a number of these ideas have been conceived…"
       ],
       "media": [
         {
-          "Visulisation of OII Research": "./media/files/OII.gif"
-        },
-        {
-          "Bacteria RNG": "./media/files/bacteriaRNG.gif"
-        },
-        {
-          "Latent Space Interpolations": "./media/files/migra.png"
-        },
-        {
-          "R PDF Probabilities": "./media/files/probability.gif"
-        },
-        {
-          "EEG Physicalisation": "./media/files/eeg.png"
-        },
-        {
-          "No Longer A Secret": "./media/files/secret.png"
-        },
-        {
-          "Barbican Pit Theatre": "./media/files/barbican.png"
-        },
-        {
-          "Ableton Surround": "./media/files/ableton.png"
-        },
-        {
-          "Open Lab": "./media/files/openlab.png"
-        },
-        {
-          "Bedtime Monologues": "./media/files/bm.gif"
-        },
-        {
-          "Resonance": "./media/files/radio.png"
-        },
-        {
-          "Pixel Tears at CSM": "./media/files/pixeltears.png"
-        },
-        {
-          "Ugly Duck Garage": "./media/files/garage.png"
-        },
-        {
-          "SPILL Festival": "./media/files/spill.png"
-        },
-        {
-          "Tate Modern": "./media/files/tate.png"
-        },
-        {
-          "Gasworks London": "./media/files/gasworks.png"
+          "Lake District UK": "./media/files/lakes.png"
         },
         {
           "LCC Workshop": "./media/files/workshop.png"
         },
         {
-          "Lake District UK": "./media/files/lakes.png"
+          "Gasworks London": "./media/files/gasworks.png"
+        },
+        {
+          "Tate Modern": "./media/files/tate.png"
+        },
+        {
+          "SPILL Festival": "./media/files/spill.png"
+        },
+        {
+          "Ugly Duck Garage": "./media/files/garage.png"
+        },
+        {
+          "Pixel Tears at CSM": "./media/files/pixeltears.png"
+        },
+        {
+          "Resonance": "./media/files/radio.png"
+        },
+        {
+          "Bedtime Monologues": "./media/files/bm.gif"
+        },
+        {
+          "Open Lab": "./media/files/openlab.png"
+        },
+        {
+          "Ableton Surround": "./media/files/ableton.png"
+        },
+        {
+          "Barbican Pit Theatre": "./media/files/barbican.png"
+        },
+        {
+          "No Longer A Secret": "./media/files/secret.png"
+        },
+        {
+          "EEG Physicalisation": "./media/files/eeg.png"
+        },
+        {
+          "R PDF Probabilities": "./media/files/probability.gif"
+        },
+        {
+          "Latent Space Interpolations": "./media/files/migra.png"
+        },
+        {
+          "Bacteria RNG": "./media/files/bacteriaRNG.gif"
+        },
+        {
+          "Visulisation of OII Research": "./media/files/OII.gif"
         }
       ],
       "links": [
         {
-          "Akvile Terminaite": "https://2020.rca.ac.uk/students/akvile-terminaite"
+          "Gasworks": "https://www.gasworks.org.uk/2018/04/25/Who_cares_A_radio_tale_Press_Release__AA6Dkgi.pdf"
         },
         {
-          "Sarah Derat": "https://sarahderat.com"
+          "South London Gallery": "https://www.southlondongallery.org/projects/bank-holiday-broadcast/"
         },
         {
-          "Anna Nykyri": "https://annanykyri.com"
+          "Tate Modern": "https://www.tate.org.uk/whats-on/tate-modern/festival/art-on-air"
         },
         {
-          "Louiseanne Wong": "https://www.instagram.com/louiseannewong/"
+          "Louis King": "https://www.spillfestival.com/show/another-bald-dead-woman/"
+        },
+        {
+          "Grace Lambert": "https://www.instagram.com/grace.lamberrt/"
         },
         {
           "Artur Strekalov": "https://soundcloud.com/mutate3k"
@@ -270,19 +273,19 @@
           "Lucie Stepankova": "https://www.introspectiveelectronics.org"
         },
         {
-          "Grace Lambert": "https://www.instagram.com/grace.lamberrt/"
+          "Anna Nykyri": "https://annanykyri.com"
         },
         {
-          "Louis King": "https://www.spillfestival.com/show/another-bald-dead-woman/"
+          "Louiseanne Wong": "https://www.instagram.com/louiseannewong/"
         },
         {
-          "Tate Modern": "https://www.tate.org.uk/whats-on/tate-modern/festival/art-on-air"
+          "Sarah Derat": "https://sarahderat.com"
         },
         {
-          "Gasworks": "https://www.gasworks.org.uk/2018/04/25/Who_cares_A_radio_tale_Press_Release__AA6Dkgi.pdf"
+          "Akvile Terminaite": "https://2020.rca.ac.uk/students/akvile-terminaite"
         },
         {
-          "South London Gallery": "https://www.southlondongallery.org/projects/bank-holiday-broadcast/"
+          "Live demo": "http://34.121.78.114/"
         }
       ]
     }
