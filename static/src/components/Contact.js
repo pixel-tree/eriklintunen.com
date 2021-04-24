@@ -96,7 +96,7 @@ class Contact {
       },
       {
         name: 'Erik',
-        greetings: hello,
+        greetings: function() { this.echo(String(hello), {keepWords: true}) },
         prompt: '> '
       })
     })

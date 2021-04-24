@@ -300,7 +300,7 @@
       "date": "230421",
       "title": "NLP learning",
       "body": [
-        "Today I cleaned up [1] that I was working on earlier this year. Clustering academic research by content using TF*IDF, PCA and t-SNE."
+        "Today I cleaned up [1] that I was working on earlier this year. Clustering academic research using TF*IDF, PCA and t-SNE."
       ],
       "links": [
         {
