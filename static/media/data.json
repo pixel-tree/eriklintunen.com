@@ -297,6 +297,24 @@
 
   "blog": [
     {
+      "date": "240421",
+      "title": "☹ ☹ ☹",
+      "body": [
+        "{1}",
+        "Source: unknown."
+      ],
+      "links": [
+        {
+          "": ""
+        }
+      ],
+      "media": [
+        {
+          "Bacteria Meme": "./media/files/bacteria.jpg"
+        }
+      ]
+    },
+    {
       "date": "230421",
       "title": "NLP learning",
       "body": [
@@ -406,7 +424,8 @@
       "date": "071020",
       "title": "Wait, what?",
       "body": [
-        "{1}"
+        "{1}",
+        "Source: unknown."
       ],
       "links": [
         {
@@ -423,7 +442,8 @@
       "date": "021020",
       "title": "Zeitgeist",
       "body": [
-        "{1}"
+        "{1}",
+        "Source: unknown."
       ],
       "links": [
         {
