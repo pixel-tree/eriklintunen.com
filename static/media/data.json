@@ -297,6 +297,54 @@
 
   "blog": [
     {
+      "date": "120521",
+      "title": "Reset day",
+      "body": [
+        "{1}",
+        "Source: unknown.",
+        "Pls come carry me to curved (EU-Ravencrest)."
+      ],
+      "links": [
+        {
+          "": ""
+        }
+      ],
+      "media": [
+        {
+          "Ah shit, here we go again...": "./media/files/wow.png"
+        }
+      ]
+    },
+    {
+      "date": "110521",
+      "title": "The silly kind of FOMO",
+      "body": [
+        "{1}",
+        "Source: unknown.",
+        "[1] has me thinking. I love the illustrations on the site (picture unrelated) -- they promote a clear vision: blockchain technology will play a key part in the future of digital transactions, commerce, tokenisation of goods, contracts, and in otherwise serving the global ICT infra.",
+        "Assuming this to be true, <i>how long will it take for the vision of materialise?</i> Here, I felt a somewhat familiar, melancholy-inducing FOMO creep into my mind, that I experience regularly about things I have missed or presumably am going to miss in my lifetime -- typically, about life on Earth pre-telecommunications or in the distant future beyond our planet/species. Silly, I realise, but what can you do about the lure of the unknown?",
+        "Full disclosure: I've never identified as a futurist-kind of guy (though yes, I enjoy reading Asimov and Ballard). Yea to the wonderful complexity of our natural world, Nay to excessive techno-optimism, I say. But sometimes my imagination gets the better of me and I find myself in a different place, at a different time.",
+        "Despite my scepticism, I think it's reasonable to assume that the Mantle of Intelligence could be passed on at some point. [2], in one of his interviews, made a poignant comment: humans are obviously not peak intelligence in terms of what the physical laws of the universe afford (after all, we have evolved under certain environmental and biological pressures).",
+        "Reading between the lines of many online blogs, news articles, etc., I sense similar FOMO looming in the air, and so I'm faced with an interesting question: is this something that each generation experiences with respect to their spirit of time?",
+        "The irony here is that it is hard to assess the gravity of singular events in real time, as we generally make sense of phenomena in retrospect: contextualising things through experience. By this I mean that life is at best prosaic (in the grand scheme of things). Social change unfolds slowly, and even if we were hypothetically in the midst of a super-intelligent AGI takeover, I doubt that we would realise for a very long time, if ever. A pity, in my curious mind!",
+        "Maybe my thought process here is a little bit superficial. After all, there are material issues to be solved presently, and much awesomeness to keep my head beneath the clouds."
+      ],
+      "links": [
+        {
+          "ethereum.org": "https://ethereum.org"
+        },
+        {
+          "Scott Aaronson": "https://www.scottaaronson.com/blog/"
+        }
+
+      ],
+      "media": [
+        {
+          "FOMO": "./media/files/fomo.png"
+        }
+      ]
+    },
+    {
       "date": "240421",
       "title": "☹ ☹ ☹",
       "body": [
@@ -335,7 +383,7 @@
       "date": "070421",
       "title": "Imaginary friends",
       "body": [
-        "[1] is what all education should be like. P.S. Happy Spring, everyone!"
+        "[1] is what most education should be like. P.S. Happy Spring, everyone!"
       ],
       "links": [
         {

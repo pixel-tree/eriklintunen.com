@@ -351,6 +351,8 @@ class Media {
     require('../media/files/workshop.png')
     require('../media/files/lakes.png')
     // Blog.
+    require('../media/files/wow.png')
+    require('../media/files/fomo.png')
     require('../media/files/bacteria.jpg')
     require('../media/files/loveable.jpg')
     require('../media/files/gpu.jpg')
