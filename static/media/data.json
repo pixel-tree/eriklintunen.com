@@ -297,6 +297,23 @@
 
   "blog": [
     {
+      "date": "220521",
+      "title": "A big time Wonder of the World",
+      "body": [
+        "[1]. I'm very impressed (and inspired)! It's been insightful to follow his team's problem solving in real-time."
+      ],
+      "links": [
+        {
+          "Stephen Wolfram does live CEOing on Twitch": "https://www.twitch.tv/stephen_wolfram"
+        }
+      ],
+      "media": [
+        {
+          "": ""
+        }
+      ]
+    },
+    {
       "date": "120521",
       "title": "Reset day",
       "body": [

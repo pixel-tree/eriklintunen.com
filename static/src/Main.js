@@ -21,6 +21,13 @@ page.content = 'portfolio'  // Default load page
 
 const data = require('../media/data.json')
 
+const math = document.createElement('script')
+math.type = 'text/javascript'
+math.id = 'MathJax-script'
+math.async = true
+math.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+document.head.appendChild(math)
+
 /* Main frames */
 
 const playground = document.createElement('div')
