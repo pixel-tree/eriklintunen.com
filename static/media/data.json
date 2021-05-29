@@ -20,9 +20,11 @@
 
   "about": [
     "Good dawning to thee, friend. I'm an artist and creative technologist (and secretly an aspiring mathematician) whose work is grounded in philosophy, new media research and information experience design. I like to learn new things -- particularly, I'm fascinated with the theory of knowledge, interpretability of statistical models, and social complexity. This site is a scrapbook of sorts, where I attempt to capture fragments of my (somewhat restless) mind in flux.",
-    "I've developed and exhibited a range of collaborative works across spaces, places and frequencies: Barbican Open Lab, HOME Manchester, IKLECTIK, RA Lates, Resonance FM/Extra, Royal College of Art, Somerset House, SPILL Festival of Performance, University of the Arts London, WIRED Japan Creative Hack Awards, fringe venues, and online. I mainly practice creative coding; but dabble in theatre, sound and radio, and occasionally perform. Below are some samples of my work, and in my blog expect to find a range of short fiction, memes, <i>super cereal</i> junk as well as other existential musings. Please use the contact page, should you wish to leave a message. Here be internet dragons.",
-    "<br>",
-    "<i>And standing before this symbolic night bursting with stars, I opened myself for the first time to the tender indifference of the world.</i> - Meursault (Camus, 1942)"
+    "I've developed and exhibited a range of collaborative works across spaces, places and frequencies: Barbican Open Lab, HOME Manchester, IKLECTIK, RA Lates, Resonance FM/Extra, Royal College of Art, Somerset House, SPILL Festival of Performance, University of the Arts London, WIRED Japan Creative Hack Awards, fringe venues, and online. I mainly practice creative coding; but dabble in theatre, sound and radio, and occasionally perform. Below are some samples of my work, and in my blog expect to find a range of short fiction, memes, <i>super cereal</i> junk as well as other existential musings. Please use the contact page, should you wish to leave a message. Here be internet dragons."
+  ],
+
+  "aboutQ": [
+    "\"And standing before this symbolic night bursting with stars, I opened myself for the first time to the tender indifference of the world.\" - Meursault (Camus, 1942)"
   ],
 
   "portfolio": [
@@ -292,7 +294,7 @@
   ],
 
   "blogQ": [
-    "<i>[My work is] all pretty meaningless. I find a good restaurant. I write it up for a magazine. Go here, try this. Why bother? Why shouldn't people just go where they feel like and order what they want? Why do they need someone to tell them? What's a menu for? And then, after I write the place up, the place gets famous and the cooking and service go to hell. It always happens. Supply and demand get all screwed up. And it was me who screwed it up. I do it one by one, nice and neat. I find what's pure and clean and see that it gets all mucked up. But that's what people call information.</i> - Unnamed protagonist (Murakami, 1988)"
+    "\"[My work is] all pretty meaningless. I find a good restaurant. I write it up for a magazine. Go here, try this. Why bother? Why shouldn't people just go where they feel like and order what they want? Why do they need someone to tell them? What's a menu for? And then, after I write the place up, the place gets famous and the cooking and service go to hell. It always happens. Supply and demand get all screwed up. And it was me who screwed it up. I do it one by one, nice and neat. I find what's pure and clean and see that it gets all mucked up. But that's what people call information.\" - Unnamed protagonist (Murakami, 1988)"
   ],
 
   "blog": [

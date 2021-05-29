@@ -16,6 +16,18 @@ class Portfolio {
     about.id = 'about'
     content.appendChild(about)
 
+    // Quote.
+    const aboutQ = document.createElement('div')
+    aboutQ.id = 'aboutQ'
+    content.appendChild(aboutQ)
+
+    for (let i = 0; i < data.aboutQ.length; i++) {
+      // Paragraphs.
+      let paragraph = document.createElement('p')
+      paragraph.innerHTML = data.aboutQ[i]
+      aboutQ.appendChild(paragraph)
+    }
+
     // Generate intro.
     for (let i = 0; i < data.about.length; i++) {
       // Paragraphs.

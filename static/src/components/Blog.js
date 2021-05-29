@@ -12,15 +12,15 @@ class Blog {
     const content = document.getElementById('content')
 
     // Quote.
-    const quote = document.createElement('div')
-    quote.id = 'quote'
-    content.appendChild(quote)
+    const blogQ = document.createElement('div')
+    blogQ.id = 'blogQ'
+    content.appendChild(blogQ)
 
     for (let i = 0; i < data.blogQ.length; i++) {
       // Paragraphs.
       let paragraph = document.createElement('p')
       paragraph.innerHTML = data.blogQ[i]
-      quote.appendChild(paragraph)
+      blogQ.appendChild(paragraph)
     }
 
     // Generate content.

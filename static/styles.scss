@@ -240,6 +240,20 @@ a:hover {
     color: $white;
 		padding-bottom: 10px;
   }
+	padding-bottom: 2.1vh;
+}
+
+#aboutQ {
+	p {
+		margin: 0;
+		max-width: 600px;
+		font-family: $B;
+    text-align: justify;
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 300;
+    color: $white;
+  }
 	padding-bottom: 21vh;
 }
 
@@ -275,14 +289,15 @@ a:hover {
 
 /* Blog */
 
-#quote {
+#blogQ {
 	p {
 		margin: 0;
 		max-width: 600px;
 		font-family: $B;
     text-align: justify;
-    font-size: 13px;
-		line-height: 20px;
+    font-size: 18px;
+		line-height: 24px;
+		font-weight: 300;
     color: $white;
   }
 	padding-bottom: 12vh;
