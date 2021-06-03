@@ -191,7 +191,7 @@
         "{2}",
         "Workshops and teaching. I've hosted workshops for my student peers; formally taught interaction design; developed and led community workshops.",
         "{1}",
-        "Not forgetting where a number of these ideas have been conceived…"
+        "Not forgetting where a number of these ideas have been conceived..."
       ],
       "media": [
         {
@@ -298,6 +298,234 @@
   ],
 
   "blog": [
+    {
+      "date": "030621",
+      "title": "Cartesian Doubt #1",
+      "body": [
+        "<i>Representations are weird and they’re everywhere.</i>",
+        "Hi there. This is a new blog that I’ve been working on, where I’ll publish short bits about various philosophical topics. My perspective is interdisciplinary and style informal. The first post is about representations -- a key topic that connects many of my intellectual compulsions (and as such, it’s a bit of a brain dump).",
+        "1. INFORMATION, EXPERIENCE, AND ALL THAT JAZZ",
+        "<q>\"When you finish a PhD in mathematics, they take you to a special room and explain that \\(i\\) isn’t the only imaginary number—turns out that ALL the numbers are imaginary, even the ones that are real.\" - [1] (2020)</q>",
+        "I’ve been watching [2] given by Joel Hamkins on the philosophy of mathematics. He quotes Owens in the first part, and I thought it would be the perfect way to kick things off. My artist friend Linnea named her recent play in the same vein: <i>Is it really ever really really really real?</i> It’s a good question, albeit somewhat humbling. In other words, what is real if reality is merely a representation? Let’s unpack this a little.",
+        "Theories about the fundamental nature of reality are metaphysical; that is, they cannot be empirically tested. The discourse often feels circular and frustrating to engage in. Ultimately, when it comes to the hard questions, we are left with <i>intuitions</i> (i.e., rational insight) in the place of solid knowledge. Then, how are metaphysical propositions validated? (This is not a question that I’m going to address, but rather something I’m genuinely curious about.)",
+        "\"My room has sound behind its walls, under its floorboards and on top of its ceiling. They make it shrink and expand, move and be still. What is in the room is visible, present, objectively here. The sound is invisible, not here, but present all the same. It is generated in my subjective hearing of it: Rushing into the objective and changing what I see. The walls are less stable in sound, wobbly even, permeable, letting things in and out; testing notions of intimacy, neighbourliness and safety. The visual room is the set on which sound plays invisible narratives: some sinister, some cheerful, some unnoticed. Unseen protagonists who might really be there or just invented by me play out fantastic scenarios that might be real, involving aliens, spaceships, cats, dogs and microwaves. -- Anything can happen.\" - [4] (2011)</q>",
+        "AFAIK the author is referring to the philosophical idea of Possible Worlds, where reality is conceived as the sum of the imaginable rather than simply what exists physically. Regardless of how one feels about this, there is a self-evident point here: our realities are significantly augmented by human variability (biological, environmental). Personal experiences matter. Zooming out, it’s weird to think that we’ve evolved in such a way that allows us to simulate reality in phenomenal terms -- by which I mean that we’re self-aware and articulate our thought processes through (shared) language; recognise what we <i>do not</i> know and take action to fill these knowledge gaps; and reason based on rather complex abstractions of the world. Despite this awesomeness, there still exist concepts that elude intellectual formalisation: intelligence, consciousness, creativity, learning, and so on. (But there is something deeply moving about not knowing -- or rather, in that there might exist a hard limit beyond which things are unknowable.)",
+        "Perhaps somewhat surprisingly, some of these mysteries are being addressed through AI research. After all, on a macro-level the field is trying to solve intelligence, and the biggest challenges there directly stem from not knowing how to represent general intelligence mathematically. [5], echoing the words of her former mentor, [6], writes about the strange loop of consciousness: it is not so much our ability to construct mental models that makes us unique but rather our ability to simulate models of our mental models (that is, metacognition of some kind). Whether AI systems <i>learn</i> anything in the first place is questionable (and IMO simply depends on one’s level of abstraction); but the state-of-the-art in the field employ technologies inspired by different forms of real-world learning and bits borrowed from human cognition.",
+        "These advances have seen plenty of success (hierarchical feature learning, convolutions in vision models, attention and memory for sequential data, reinforcement learning, etc.). Personally, in ML research I’m most excited by [7] and co., where work is published to demystify how neural networks self-organise, by visualising the emergent information processes. This subfield of ML is still in its infancy; but the work resembles trying to reverse-engineer computer programs, and interestingly this ethos resonates with the words of [8], re: how statistics came to be -- Can I turn the problem around? Can I infer the underlying mechanisms from the outcomes?",
+        "I’m digressing slightly, but the point I’m trying to make is that representations are everywhere, and they have played a big part in philosophical discourse across time. I often associate representations with knowledge (because the human experience is so intrinsically tied to learning), and this leads us into the field of epistemology. That is, the formal study of knowledge -- with a focus on the tools and processes by which we make sense of the world. And this is partly what attracted me, after five years of hard work in art school, to (possibly) regress in the rat race of responsible adulthood by diving into a maths degree. After all, it is arguably the foundation of all human thought.",
+        "It seems that the philosophical zeitgeist is aligned with my previous sentiment; historically, reflecting developments in information communication technologies (ICTs). The philosophical landscape has shifted from a focus on the nature of reality to our knowledge of reality (and more recently to language and to information, i.e., the technological frameworks within which we make sense of our knowledge of reality). In this sense, I understand why [9] suggests that philosophy has always had information at its heart.",
+        "There exist fascinating tensions within epistemology between rationalists and empiricists. Superficially, one might characterise this confrontation as a difference in how two concepts are understood: <i>information</i> and <i>experience</i>. Specifically, the extent to which the latter plays a part in shaping the former. Immanuel Kant developed an epistemological framework formalising this, by drawing a distinction between <i>a priori</i> and <i>a posteriori</i> (knowledge independent of experience and knowledge informed by empirical evidence, respectively). For instance, we learn about certain things from a young age: we fall and hurt ourselves; we might be rewarded for good behaviour; and we age irreversibly. We learn that everything is just happening -- we are part of the universe and there is no place for us to stand outside of its causal structure. Conversely, tautologies are redundant statements where we repeat ourselves, and exemplify how knowledge can be derived and justified through reason alone: heroic heroes, always and forever, a beginner who has just started. While I find it hard to comprehend how knowledge can be completely independent of experience, I’m guessing the nature of <i>a priori</i> lies in generalisation and abstraction.",
+        "I find both schools of thought useful. On the one hand, I find it immensely useful to think about the world in terms of abstract objects, sets and their interrelations; but also find value in experimental and systematic reflections of the properties and structures of experience. Unfortunately, I’m too uninformed in the subject matter to discuss it any further, and it’s time to move on. I’ve briefly contextualised how representations relate to knowledge; but what does it mean to represent something in practice? And how do representations relate to my interests? I have more questions than answers, and this overwhelming curiosity takes me back to a Finnish lullaby that, crudely translated, goes something along the lines of...",
+        "<i>There are many wonderful things in the world,<br>It amazes, puzzles the little wayfarer.</i>",
+        "2. MATHEMATICAL REPRESENTATIONS, FORMS, AND PROBABILITY",
+        "{1}",
+        "Source: Blizzard Entertainment Inc.",
+        "<q>\"Perhaps it is your imperfections... that which grants you free will... that allows you to persevere against all cosmically calculated odds. You prevail where the Titan’s own perfect creations have failed.\" - [10] (pictured above)</q>",
+        "You might have heard of Plato’s theory of Forms. It comes up in one of his most well-known stories: <i>The Allegory of the Cave</i>. I’m not super familiar with the narrative, so I won’t butcher it here; but in essence, Forms are the purest of all things -- they transcend time and space and exist beyond our phenomenal world. According to the theory, objects are then merely momentary instances of these Forms; that is, they represent Ideas. To illustrate this in practice, consider circles. Digital circles are made up of pixels, and physical circles are made up of atoms and molecules. There are no perfect circles. Regardless, we all know what is meant by a circle. We can also define a circle mathematically, in standard form",
+        "\\[(x-a)^2 + (y-b)^2 = r^2, \\quad \\text{with centre} \\quad (a, b) \\quad \\text{and radius} \\quad r.\\]",
+        "Here, we have a representation of a circle -- an implicit equation, that defines the object geometrically in \\(\\mathbb{R}^2\\) given any real \\(a, b\\) and non-negative \\(r\\). But a <i>perfect</i> circle cannot be computed, as it is continuous (which implies uncountability, in turn implying uncomputability). The circle can only be approximated using a set of discrete values. Good enough, right? Sure, but I think it’s an interesting fact of nature that mathematical objects possess some Ideal features, in that their accurate reproduction is physically impossible.",
+        "Let’s consider another example, this time from statistics. One could say that the statistical doctrine is very different to that of mathematics: the latter is the study of certainty (proofs, sets, axioms, etc.), whereas the former is the study of uncertainty (probability, hypothesis testing, confidence intervals, etc.). Statistical analysis is typically characterised as inferring things about a population based on sample data (NB here <i>population</i> does not refer to the colloquial use of the word, but instead to any subject of statistical observation -- this includes non-human things). We know that real-world phenomena can be modelled by particular probability distributions (which generally belong to wider families of distributions). For instance, the expected outcome of a single roll of an unbiased die can be represented using the discrete uniform distribution, where the probability of obtaining any one number is \\(\\frac 1 6 \\). Here, the possible outcomes are counts, but many of the real-world variables that we are interested in modelling are measured (hence, they are continuous as opposed to discrete).",
+        "Take for instance the normal distribution, a.k.a. the Gaussian, a.k.a. the bell curve, that is widely known (and widely used due to its nice symmetric properties). Let \\(X\\) be a normally distributed random variable with mean \\(\\mu = 0\\) and variance \\(\\sigma^2 = 1\\). That is, \\(X \\sim N(0, 1)\\). This is the standard normal distribution. We represent the probabilities by using a continuous function; namely, a probability density function (p.d.f.). This is graphed below.",
+        "{2}",
+        "Source: unknown.",
+        "As you will be able to see, the distribution is unimodal (i.e., has one peak) and is symmetric about the mean. Almost all of the distribution is contained within \\(\\pm 3\\) standard deviations from the mean. The formula on the right is extremely useful -- it is used to standardise a random observation \\(X\\) which, for instance, empowers us to use parametric tests on a wide variety of data with a large enough sample size.",
+        "I’ll illustrate my point about Forms by drawing some random samples from a (hypothetical) known population. In one of my statistics units at the Open University, we model the waiting times between tsunamis using an exponential distribution with rate parameter \\(\\lambda = \\frac 1 {26}\\). For now, assume that this model is reasonable. I draw 1000 random samples, each of size \\(n = 30\\), from this distribution; and represent these as a \\(30 \\times 1000\\) matrix, where each column represents an independent sample of 30 waiting times.",
+        "<code>times <- matrix(nrow=30, ncol=1000)<br>for (i in seq(1, 1000)) {<br><span class='indent'></span>times[,i] <- rexp(30, 1/26)<br>}</code>",
+        "The distributions of the first eight samples are included below as relative-frequency histograms. In each of these, the overlaid curve represents our model, \\(M(\\frac 1 {26})\\). Note that this curve looks different in each graph only due to the scaling of the axes, when in fact it is the same curve.",
+        "{3}",
+        "It is evident that some samples follow an exponential model, but as \\(n\\) is small there is quite a bit of variability. What is clear though, is that the data are right-skew with the peak to the left of the graph (which is no surprise here as the samples come from a known population). Based on these data, we could infer that, according to the model, it seems fairly probable that the time interval between two consecutive tsunamis is under five years.",
+        "Enter a beautiful Idea in probability theory: the Central Limit Theorem. Let’s create some new samples by sampling the mean of each of our 1000 exponential samples. By the Central Limit Theorem, if \\(n > 25\\), then regardless of the underlying population the sampling distribution of the mean is approximately normal (which explains the previously made point about the convenience of standardisation).",
+        "<code>means <- vector()<br>for (i in seq(1, 1000)) {<br><span class='indent'>means[i] <- mean(times[,i])</span><br>}</code>",
+        "Six graphs are included here -- representing three independent samples (where \\(n = 25, \\quad n = 100, \\quad n = 1000\\)). The histograms have Gaussian curves overlaid, and below each of these are their respective probability plots (used to assess normality -- the data should lie roughly along a straight line with no systematic patterns). As we can see, when increasing sample size the sampling distribution of the mean tends to the normal distribution. And furthermore, it <i>settles down</i> as \\(n\\) becomes arbitrarily large.",
+        "{4}",
+        "We may elaborate on this interesting statistical phenomenon of <i>settling down</i> by creating an artificial dataset. This time, drawing three samples from the standard normal distribution, where \\(n = 500, \\quad n = 1500, \\quad n = 100000.\\) The samples are visualised below.",
+        "<code>small <- rnorm(500, 0, 1)<br>med <- rnorm(1500, 0, 1)<br>large <- rnorm(100000, 0, 1)</code>",
+        "{5}",
+        "It doesn’t matter whether the data are artificial or not -- when we increase \\(n\\), the observed values (divided into the bins of the histogram) tend to the probability model (the curve). In other words, the sample becomes a more accurate representation of the underlying population. This is trivial and expected; however, the population is rarely known (or it might be prohibitively expensive/otherwise impractical to include in its entirety). Hence, in practice this statistical fact is useful.",
+        "To highlight the difference between continuous and discrete sets (between the Ideal form and its representation, if you’d like), consider their differences in terms of probabilities. Perhaps counterintuitively, under a continuous model the probability of obtaining a single value (e.g., exactly 12 months between two tsunamis) is zero. This is because time is measured rather than counted -- accuracy can be arbitrarily increased, hence, there are an infinite number of possible values that the waiting time can take (is it 12.1 or 12.0000001). In the continuous case, the probability of observing a certain value is calculated using intervals; e.g., 12 months can be defined as any value in \\((11.5, 12.5)\\). Its probability, \\(P(11.5 < X < 12.5)\\), is then calculated using integration -- a valid p.d.f. integrates to 1 over its range, meaning that the area under the curve represents probabilities. (Also, we can estimate the occurrence of events in continuous time using something called the Poisson process.) As with the circle, we are unable to physically observe the Ideal object.",
+        "The implication here is that, in a sense, there exist abstract objects that we use to reason about the real world, which materialise as lower resolution approximations of their Form. To a computer scientist this might be a trivial fact, as computers deal exclusively with discrete data.",
+        "Returning to the words of Algalon, spoken in the Celestial Planetarium of Ulduar: \"Perhaps it is your imperfections... that which grants you free will... that allows you to persevere against all cosmically calculated odds.\" This lingers in my mind nicely. Assuming that the universe is finite and isolated, there will be some underlying distribution from which the music is played, so to speak. Maybe it’s predetermined, maybe not (who cares?). But ultimately, all life kneels before entropy -- the arrow of time. Or perhaps, as proposed by Penrose, we iterate through infinite cosmic cycles. Either way, there’s only a single direction for us to move in (at the very highest levels of abstraction).",
+        "{6}",
+        "Source: unknown.",
+        "3. CANTOR'S INTERLUDE",
+        "Before moving on into the realm of discrete mathematics, let me elaborate on something previously mentioned: uncountability. It’s useful here to briefly expand on numbers, sets, the continuum and infinity.",
+        "What are numbers? I mean, we deal with them regularly in life; but what are they really and how did they come to be so widely used? Simply put, they can be thought of as <i>classification invariants of the equinumerosity relation</i>. OK, OK, maybe not so simply put. In other words, numbers are somewhat arbitrary representations, used to classify objects or sets based on one primary feature, namely, equinumerosity (this set has the same number of elements as the other set). For instance, the integer 42 can be represented in various ways: \\(\\frac {126} 3\\) (rational) = XLII (Roman numerals) = 101010 (binary). Here, seemingly unrelated objects (following different numeral systems) refer to the same Idea; that is, the number 42.",
+        "Consider some common sets of numbers...",
+        "\\[\\mathbb{N} \\subseteq \\mathbb{Z} \\subseteq \\mathbb{Q} \\subseteq \\mathbb{R} \\subseteq \\mathbb{C}\\]",
+        "From left to right: each set is a subset of the set that follows. The natural numbers, \\(\\mathbb{N}\\), consist of non-negative whole numbers (\\(0, 1, 2, \\dots\\)). The integers, \\(\\mathbb{Z}\\), include the naturals as well as the set of negative whole numbers (\\(\\dots, -2, -1, 0, 1, 2, \\dots\\)). The rational numbers, \\(\\mathbb{Q}\\), are numbers that can be represented using fractions, in the form \\(\\frac{p}{q}\\) where \\(p\\) and \\(q\\) are integers. The real numbers, \\(\\mathbb{R}\\), contain all of the aforementioned sets, as well as the set of numbers which cannot be represented by fractions -- i.e., they have non-repeating, infinite decimal expansions (e.g., \\(\\sqrt{2}, \\pi, \\text{e}\\)). The complex numbers, \\(\\mathbb{C}\\), are numbers expressed in the form \\(a + bi\\) where \\(a\\) and \\(b\\) are real numbers and the term in \\(i\\) is its imaginary component (where the imaginary unit \\(i\\) satisfies \\(i^2 = -1\\)). To visualise these sets, one can simply picture all but the complex numbers using the number line; and for complex numbers, one can use the complex plane, where the horizontal axis represents its real component, and the vertical axis represents its imaginary component.",
+        "{7}",
+        "All of the sets above share a common feature: they are infinitely large. The sets \\(\\mathbb{N, Z, Q}\\) share another common feature: they are countably infinite. That is, in mathematical terms, there exists a bijection (one-to-one correspondence) between each of these sets and the natural numbers -- we can pair each element with a unique natural number \\(0, 1, 2, \\dots\\). As for the set of real numbers, enter mathematician Georg Cantor who, in the late 1800s, blew up the world of mathematics with his discoveries.",
+        "Real numbers are fascinating in their own right: some of them emerge under natural, prosaic circumstances, yet they have no rational representation. For instance, consider the unit square with side lengths of 1. The length of its diagonal is then \\(\\sqrt{2}\\) (\\(a^2 + b^2 = c^2 \\Rightarrow c = \\sqrt{1^2 + 1^2} = \\sqrt{2} = 1.414213\\dots\\)). I will omit the proof of its irrationality, as it’s beside the point and easy to find online. But the story of its discovery is interesting. [11] writes:",
+        "<q>\"It was a shocking discovery for the Pythagoreans, and indeed heretical in light of their quasi-religious number-mysticism beliefs, which aimed to comprehend all through proportion and ratio, taking numbers as the foundational substance of reality. According to legend, the man who made the discovery of incommensurability was drowned at sea, punished by the gods for revealing the secret knowledge of irrationality.\"</q>",
+        "Yikes.",
+        "Here are some further examples of irrational numbers. \\(\\pi = 3.141592\\dots\\) represents the number given by dividing the circumference of a circle by its diameter. Then, we have Euler’s number, \\(\\text{e}\\), a mathematical constant that can be defined as \\(\\text{e} = \\lim_{n \\to \\infty} (1 + \\frac 1 n)^n\\), or alternatively as an infinite series (\\(= \\sum_{n = 0}^\\infty \\frac 1 {n!} = 1 + \\frac 1 1 + \\frac 1 {1 \\times 2} + \\frac 1 {1 \\times 2 \\times 3} + \\dots\\)). This series converges to \\(\\text{e} = 2.718281\\dots\\), as \\(n\\) tends to infinity.",
+        "Returning to Cantor: \"what makes the real numbers so different from the integers,\" I hear you say? Well, he showed that the set of real numbers is uncountably infinite. That is, all of the sets presented here constitute an infinite number of elements, but the infinity of the reals is somehow larger (we say that the reals have a larger <i>cardinality</i> than the integers). Consider this proof by contradiction, known as Cantor’s <i>diagonal argument</i>.",
+        "Suppose that the real numbers can be put into one-to-one correspondence with the natural numbers. We list some irrational reals, where \\(s_1, s_2, \\dots, s_n\\) is an enumeration of all elements in the set of real numbers. Here, we start with square roots of the first nine primes, \\(2, 3, 5, 7, 11, 13, 17, 19, 23\\).",
+        "\\begin{alignat}{2} s_1 &= 1.\\mathbf{4}14213562 &&\\dots \\\\ s_2 &= 1.7\\mathbf{3}2050808 &&\\dots \\\\ s_3 &= 2.23\\mathbf{6}067977 &&\\dots \\\\ s_4 &= 2.645\\mathbf{7}51311 &&\\dots \\\\ s_5 &= 3.3166\\mathbf{2}4790 &&\\dots \\\\ s_6 &= 3.60555\\mathbf{1}275 &&\\dots \\\\ s_7 &= 4.123105\\mathbf{6}25 &&\\dots \\\\ s_8 &= 4.3588989\\mathbf{4}3 &&\\dots \\\\ s_9 &= 4.79583152\\mathbf{3} &&\\dots \\\\ \\vdots &\\qquad \\vdots &&\\ddots \\end{alignat}",
+        "Then, a new element is constructed from the (emphasised) diagonal, by choosing any number 0-9 other than that number. Here, we add 1 to each of the (bold) numbers (and if it happens to be 9 then we cycle back to 0). Hence, the new real is",
+        "\\[s = 0.\\mathbf{547832754}\\dots.\\]",
+        "The numbers in our list expand indefinitely in the horizontal and vertical directions (the infinite decimal expansion of each number and the infinite number of elements in the set respectively). It follows that the emphasised diagonal is infinite, and thus our constructed real, \\(s\\), always has a different \\(n^{th}\\) digit\\(s\\) to its corresponding element in our set of enumerated reals -- and hence cannot exist in the set of reals. Time has absolutely nothing to do with this, but if the example is not clear enough think of the construction of the new real as a process -- enumerating all reals one by one, \\(s\\) is different to every number that has been previously sampled in at least one of the decimal digits, and it will always be different to the next one by at least one decimal digit. Yet it’s clearly a real number. Hence, the reals cannot be put into one-to-one correspondence with the natural numbers. \\(\\square\\)",
+        "Infinity has some other fascinating properties. You might have heard of Hilbert’s <i>paradox of the Grand Hotel</i>. Let’s consider this briefly. Suppose that this hotel has an infinite number of rooms and it’s full. A new guest arrives. We move each existing guest from room \\(n\\) to room \\(n+1\\), and now there is room for the new guest. Done! What about an infinite number of new guests? Suppose that they arrive by some metaphysical train. We move each existing guest from room \\(n\\) to room \\(2n\\) (always even) and pair each arriving guest with a unique odd numbered room (e.g., room \\(2n+1\\) where \\(n\\) is their seat number on the train). Again, problem solved! What about a train with an infinite number of cars, each with an infinite number of prospective guests? E-Z! Move existing guests from room \\(n\\) to room \\(2n\\) and allocate each new guest the room \\(3^i 5^j\\) where \\(i\\) represents their car number and \\(j\\) represents their seat number. Every natural number greater than 1 has a unique prime factorisation, and odd times odd is always odd... so again, winning!",
+        "If this isn’t weird enough for you, then consider this: ever since Gödel, mathematics has been in existential crisis. His <i>Incompleteness Theorems</i> show that there exist mathematical truths that can never be proved. Without going into the specifics, its implications are apparent: there are things that we believe to be true about the world, but which cannot be known for sure. Turing spiced up the pot with a similar theory regarding computability -- the <i>halting problem</i>. There exists no computer program that, when given an arbitrary program, can determine whether it will run forever or not. In addition to all of this, there appear to be other significant problems in the world of mathematics which remain without clear-cut answers.",
+        "{8}",
+        "Source: unknown.",
+        "I’ve read that Cantor’s ideas were widely despised in his time. It seems that to some, the Idea of infinity is as sacred as the Idea of rationality was to the Pythagoreans. He was not drowned at sea but died alone in a sanatorium. Personally, I think that there is something poetic about an infinite number of different sized infinities. But then again, I don’t fully understand the implications; and (to my great sadness) good poetry doesn’t work as a justification in mathematics.",
+        "I’ll finish this section with the words of [12]: \"I am truly very sorry, but we do not know, fully, what numbers are. The problem of mathematical ontology is not solved.\"",
+        "4. DATA REPRESENTATIONS",
+        "\"Can you describe what you see here?\"",
+        "{9}",
+        "Source: [13] elephant.",
+        "AI:",
+        "\\begin{align} \\text{array([[}&\\text{3.64433594e+01, 0.00000000e+00, 6.73487949e+00,} \\\\ &\\text{0.00000000e+00, 6.36244392e+01, 7.16723480e+01,} \\\\ &\\text{[...]} \\\\ &\\text{2.51059551e+01, 1.39128494e+01, 4.99260292e+01]])} \\end{align}",
+        "AI=>Human translation:",
+        "{10}",
+        "Machine learning algorithms have become ubiquitous in the realm of ICTs. They mediate a significant proportion of our daily interactions, knowledge acquisition, as well as other material aspects of the human experience.",
+        "While these technologies offer vast potential in bettering our lives overall, they give rise to complex issues in terms of accountability and inclusion. While it is relatively easy for non-experts to use existing ML technologies, there is an unreasonably high barrier-of-entry to understanding these systems on an informational level. On the one hand, this is somewhat unavoidable as one is required to have a decent grasp of linear algebra, probability theory and calculus, and to possess basic skills in computer programming. But even then, knowing exactly what happens \"under the hood\" remains elusive; and this has given rise to a whole new subfield of AI research, namely, interpretable (or explainable) ML. And this is (IMO) some of the most interesting research currently being done (in the entire world!) -- so naturally, I’m quite curious about different ways of representing real-world phenomena in the language of computers.",
+        "(Though the field is young, some really strong intuitions have already been developed in understanding neural nets -- in [14] the authors handcraft curve detectors which approximate natural ones surprisingly well.)",
+        "In the case of the above elephant, I’ve fed the image through a convolutional neural network (CNN) trained on the ImageNet dataset and visualised some of the highly activating channels across the layers. The technical specifics are slightly more complicated; but essentially, the visualisation shows the process of hierarchical feature learning in deep neural networks. The complexity of the patterns increases as we dive deeper into the network -- the early layers recognise edges, corners and simple shapes; and layers build on top of the representations learned in the previous layers to eventually learn feature maps that capture (the essence of) entire objects. The visualisation has been produced using the wonderful [15] library.",
+        "In plain neural networks, the way in which this works is that we take digital images and break down the pixels into single vectors (or vectors for each colour channel). This is illustrated below -- can you recognise the object represented here?",
+        "{11}",
+        "I’m very surprised if your answer was yes. Fortunately, computers are good at this type of thing, and it’s one of the reasons why machine learning has seen so much success -- give a machine some labels which represent classes of objects (cats, dogs, elephants) and accompany those labels with examples (instances of those classes, a.k.a. data) like above, and the machine will learn the necessary features for it to successfully distinguish between the different classes. The Idea is very clever!",
+        "To elaborate, consider this pixelated \\(19 \\times 24\\) image of me in the Lake District, UK.",
+        "{12}",
+        "Each pixel is represented by three numerical values between 0 and 255, for each of the (red, green, blue) colour channels. If we split the channels of the image, we end up with three separate representations.",
+        "{13}",
+        "Then, as before, we rearrange the pixels into an appropriate input representation for the neural network. There are 24 rows and 19 columns, so there are a total of 456 pixels. Each pixel is typically considered as an individual feature; hence, we have a 456-dimensional vector that represents the image (\\(\\times 3\\) due to the number of colour channels). Here, there are various ways in which the image could be represented, some of which are presented below. The first is a grayscale representation (with the numerical array included, where each pixel value has been normalised, i.e., divided by 255 to obtain values which sit between 0 and 1); the second is an array where the three colour channels have been concatenated into a single vector; and in the third example each colour channel is represented as an individual vector.",
+        "{14}",
+        "{15}",
+        "{16}",
+        "Representing visual phenomena in this way is surprisingly common and intuitive, even outside the realm of machine learning. During my MA studies, we had some workshops on colour, and one of my designer friends, [16], thought that it would be interesting to represent the colours schemes of motion picture films in a similar way -- by extracting frames at a constant rate and presenting these along a timeline. I believe that she was interested in capturing the change over time (temporal relationships); whereas in ML (static) vision models, time is less relevant, and instead the spatial relationships are generally those which are of interest (to recognise objects in images). However, using representations like those introduced above are actually very inefficient and computationally expensive. This is because we need a fully connected neural network to process each pixel as an individual feature. The most widely used architecture in vision models is the convolutional neural net, where images are typically represented as tensors of shape (image_height, image_width, colour_channels). The features are learned using 2-D feature maps, and the data are not flattened until the final layer(s), where the classification takes place.",
+        "Representations of natural language function similarly in the way that we wish to learn features which distinguish objects and classes from one another, but the representations used are different. Admittedly, I don’t know much about NLP but have been trying to learn more about it recently. In short, natural language data are tokenised in some way -- e.g., this might involve word vectors or paragraph vectors in the spirit of the <i>bag-of-words</i> representation. A common way to do this is by using <i>n-grams</i>, where data are represented as counts of unique words or unique combinations of words. Each of these is considered to be a feature.",
+        "To illustrate this process, consider the first paragraph of Kafka’s <i>Metamorphosis</i>. Here, we tokenise the paragraph by unigrams (single words as opposed to combinations), removing all English stop words (a, and, but, how -- i.e., words with little statistical significance).",
+        "<code>from sklearn.feature_extraction.text import CountVectorizer<br><br>data = [\"One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.\"]<br><br>vectoriser = CountVectorizer\\<br><span class='indent'>(min_df=1,</span><br><span class='indent'>stop_words=\"english\",</span><br><span class='indent'>strip_accents=\"unicode\",</span><br><span class='indent'>lowercase=True,</span><br><span class='indent'>ngram_range=(1, 1))</span><br><br>X = vectoriser.fit_transform(data)<br><br>map = {}<br>for i in range(len(vectoriser.get_feature_names())):<br><span class='indent'>map[vectoriser.get_feature_names()[i]] = X.toarray()[0][i]</span><br><br>print(map)</code>",
+        "<code>{'able': 1, 'arches': 1, 'armour': 1, 'bed': 1, 'bedding': 1, 'belly': 1, 'brown': 1, 'compared': 1, 'cover': 1, 'divided': 1, 'domed': 1, 'dreams': 1, 'gregor': 1, 'hardly': 1, 'head': 1, 'helplessly': 1, 'horrible': 1, 'lay': 1, 'legs': 1, 'lifted': 1, 'like': 1, 'little': 1, 'looked': 1, 'moment': 1, 'morning': 1, 'pitifully': 1, 'ready': 1, 'rest': 1, 'samsa': 1, 'sections': 1, 'size': 1, 'slide': 1, 'slightly': 1, 'stiff': 1, 'transformed': 1, 'troubled': 1, 'vermin': 1, 'waved': 1, 'woke': 1}</code>",
+        "Here, the output is 39 unigrams, and for clarity I’ve mapped the feature labels (words) to their respective counts. Then, we might use something like the <i>term frequency -- inverse document frequency </i> algorithm, where we produce scores to distinguish between meaningful features and less relevant features (in each document). Various (dis)similarity measures can be used to classify the data (e.g., <i>Euclidean distance</i> or <i>cosine similarity</i>) -- these are arbitrary measures which are supposed to be informative of some aspect of the data. (If you’re interested, I’ve tried to outline the technical details of TF*IDF as part of [17] from earlier this year.) Furthermore, modern NLP systems include components such as long short-term memory, attention mechanisms, and so on. And bear in mind, that the example presented here is extremely simplified -- real-world state-of-the-art natural language models contain billions of parameters. No wonder that emergent behaviours might be hard to understand, as the networks are enormous!",
+        "So far, we have considered image data and natural language data. We might also wish to represent sound. In terms of ML research, this area does not seem to be as ripe as the previous two; but it is extremely interesting, nevertheless. Audio is sequential, where often temporal relationships are of interest: modelling changes in frequency and amplitude over time. One major issue in modelling raw audio stems from the way in which autoregressive models work, in that predicted (/new) samples are influenced by all previous samples -- and we typically represent sound digitally using a whopping sample rate of 44.1 kHz, i.e., 44100 samples per second. The implication here is that the task of generating new samples is computationally expensive (and thus very slow). However, from previous experience, most sound-related datasets seem to be recorded at 16 kHz, which trades off audio quality for making things slightly easier.",
+        "Below is an example of MIDI -- a representation of pitch (/frequency) and velocity over time, using a range of possible values of 0-127. (We return to the Finnish lullaby introduced at the end of the first section -- the melody here is in the F minor key.)",
+        "{17}",
+        "More specifically, the representation here is known as the <i>piano roll</i>. Pitches follow the vertical axis (increasing as we move up) and time is represented on the horizontal axis (usually relative to the set tempo of the track instead of metric time directly). It is a fairly simple and lightweight representation as it does not include any information regarding timbre or space. It is typically used to program synthesised sound.",
+        "In comparison, here are two alternative representations of the same lullaby, where I’ve recorded the melody on a saxophone.",
+        "{18}",
+        "The higher of the two representations (in green) is known as a <i>waveform</i> representation, which is arguably the most widely recognisable in terms of digital audio. It is a graphical representation of amplitude (on the vertical axis) against time (horizontal axis). Similar to MIDI, it does not reveal much about the characteristics of the sound it represents. It is mostly used to record, sequence and edit raw audio -- to a trained eye it is useful for making qualitative judgements about sound (mostly to do with dynamics and overall levels). The lower representation is a <i>spectral frequency graph</i>, which isn’t as popularised but is extremely informative. It is essentially a <i>waveform</i> representation with an additional feature dimension; that is, the vertical axis represents frequencies (here, ranging from 0 Hz - 42 kH from bottom up -- for reference, the human range of hearing is around 20 Hz - 20 kHz, depending on age and other factors) and amplitude is instead represented by colour.",
+        "It is undeniable that the world of data representations is rich and versatile. Here, I’ve only scratched the surface. The area is fertile ground for innovation, in developing new ways of representing the world computationally (NB the paradigm shifting nature of quantum computing). In ML, this interest in representing the world extends to ways in which the representations may be learned. In addition to data representations, there are objective functions (some formal way of representing the problem) and optimisation method (i.e., the process of updating states). Furthermore, there are also things like <i>priors</i>, which represent our beliefs of the world in the form of probability distributions (or more implicitly, this might materialise as a specific choice of architecture where the model favours a certain type of data or emphasises specific types of features), and heaps of other variables to consider.",
+        "More generally, computer science research could be characterised as the manipulation of arbitrary representations using mathematical operations. Therefore, representations sit at the very core of the tools which we use to interface with the world around us (and as such, form a crucial part of all scientific research and knowledge).",
+        "5. SOME LAST WORDS",
+        "This marks the end of the first post in the <i>Cartesian Doubt</i> series. As a brain dump of ruminated Ideas acquired over quite some time, this post ended up much longer than I anticipate the typical future post to be. Summa summarum, representations are weird and they’re everywhere. I leave you with the full title of [18]’s play:",
+        "\"Is it really ever really really really real? Or is real reality really just a representation? Really.\""
+      ],
+      "links": [
+        {
+          "Kate Owens": "https://twitter.com/katemath"
+        },
+        {
+          "a series of lectures": "https://youtu.be/uo1xDbsYAcU"
+        },
+        {
+          "Linnea": "https://linnealangfjordkristensen.com/"
+        },
+        {
+          "Salomé Voegelin": "https://soundwords.tumblr.com/"
+        },
+        {
+          "Melanie Mitchell": "https://melaniemitchell.me/aibook/"
+        },
+        {
+          "Douglas Hofstadter": "https://en.wikipedia.org/wiki/Gödel,_Escher,_Bach"
+        },
+        {
+          "Distill": "https://distill.pub/"
+        },
+        {
+          "Michael I. Jordan": "https://www.cs.berkeley.edu/~jordan"
+        },
+        {
+          "Floridi": "https://fivebooks.com/best-books/luciano-floridi-philosophy-information/"
+        },
+        {
+          "Algalon the Observer": "https://wowpedia.fandom.com/wiki/Algalon_the_Observer"
+        },
+        {
+          "Hamkins (2021)": "http://jdh.hamkins.org/lectures-on-the-philosophy-of-mathematics/"
+        },
+        {
+          "Hamkins (<i>ibid.</i>)": "http://jdh.hamkins.org/lectures-on-the-philosophy-of-mathematics/"
+        },
+        {
+          "ImageNet": "https://www.image-net.org/"
+        },
+        {
+          "this example": "https://distill.pub/2020/circuits/curve-circuits/"
+        },
+        {
+          "Lucid": "https://github.com/tensorflow/lucid"
+        },
+        {
+          "Akvile": "https://akvilete.cargo.site/"
+        },
+        {
+          "a small project of mine": "http://34.121.78.114/"
+        },
+        {
+          "Linnea": "https://linnealangfjordkristensen.com/"
+        }
+      ],
+      "media": [
+        {
+          "Algalon the Observer": "./media/files/algalon.png"
+        },
+        {
+          "The normal distribution": "./media/files/normal.png"
+        },
+        {
+          "Waiting times between tsunamis": "./media/files/tsunamis.png"
+        },
+        {
+          "Sampling distributions": "./media/files/means.png"
+        },
+        {
+          "The settling down phenomenon": "./media/files/settle.png"
+        },
+        {
+          "Virgin Heat Death and Chad Cyclic Universe": "./media/files/virginchaduni.png"
+        },
+        {
+          "Common number sets": "./media/files/numbersets.png"
+        },
+        {
+          "Confused screaming": "./media/files/confusedscream.png"
+        },
+        {
+          "ImageNet elephant": "./media/files/elephant.png"
+        },
+        {
+          "Elephant Lucid visualisation": "./media/files/lucid.png"
+        },
+        {
+          "Grayscale image vector": "./media/files/imageArBW.png"
+        },
+        {
+          "Mosaic RGB": "./media/files/mosaic.png"
+        },
+        {
+          "Mosaic split channel RGB": "./media/files/mosaicRGB.png"
+        },
+        {
+          "Grayscale image vector with numerical array": "./media/files/imageArBWNum.png"
+        },
+        {
+          "RGB image vector": "./media/files/imageArRGB.png"
+        },
+        {
+          "Split channel RGB image vector": "./media/files/imageArRGBSplit.png"
+        },
+        {
+          "MIDI": "./media/files/midi.png"
+        },
+        {
+          "Waveform and Spectral Frequency Graph": "./media/files/waveformspectral.png"
+        }
+      ]
+    },
     {
       "date": "310521",
       "title": "Starting a new week be like",
@@ -601,7 +829,7 @@
         "My mornings had a ritualistic aspect to them, though I wasn't sure if they actually qualified as rituals per se. Sure, there was a repetitive framework within which everything occurred: coffee, radio and some reads. However, the events lacked consistency (in how they were ordered); and I could effortlessly lose myself to any of these activities for extensive periods of time. But everything happened semi-consciously: my mind was relatively free to venture elsewhere, as my body performed familiar sets of actions, day-in-day-out. Distinctly, the mornings were blessed by clarity, whereas noon was unreasonably costly for my attention span.",
         "I listened to the ambient symphony, now augmented by a flood of coffee dripping into the glass pan. My nose caught onto the familiar scent, that filled the room. I drifted off but was soon grounded by the bleak realisation that it was yet another Monday. Meaning that another week had passed; another had begun, and soon it too would be lost to entropy, gradually disintegrating from once-a-clear-memory to messy insignificant fragments floating in time. And to top it all off, I would probably be standing in the same spot, yet again contemplating the cycle.",
         "I observed nothing of interest out in the garden. The absence of life was normal at this time of year, I guessed, but the stillness was eerie, nevertheless. It could also be night-time -- I was still unsure. Time-of-day mattered little, as I would be unable to return to sleep regardless. Due to my insomnia, time had become more elastic and expendable.",
-        "I noticed a full moon in the sky, existing in captivating stillness with few stars distributed across the murky cloudscape. Unperturbed, I poured myself coffee. I walked over to the other room and put on a record; I sat down, and drank the coffee…"
+        "I noticed a full moon in the sky, existing in captivating stillness with few stars distributed across the murky cloudscape. Unperturbed, I poured myself coffee. I walked over to the other room and put on a record; I sat down, and drank the coffee..."
         ],
       "links": [
         {
@@ -638,7 +866,7 @@
         "'You're taking away the poetry from my world, man,' I thought, as I listened intently to the passionate gentleman standing before me.",
         "I drew to pass the time (and to distract myself from thinking about you): an abstract city of information; populated by two androgynous figures overlooking the monotonous plane. 'Look around,' they say. 'The patterns are vague here.' And true they were. The horizon was clouded by a vast sea of noise.",
         "All beings and things around me faded, and I sunk deep into my chair held gently against the hard plastic not only by the ever-penetrating force of gravity but also an ineffable energy: I lost myself to thought, losing track of the day, of position, and of all earthly concepts; a fluffy cloud of nothingness surrounded me as I lost all phenomenal presence. I was stripped down and smitten by my memories. WHACK.",
-        "The scene played out within the confines of my mind. I was transported some nights back: holding your gaze, somewhat shy, evoking an atmosphere of tension tender but wild. THUMP. Forces collided in time and space; a profoundly unexpected moment and unanticipated feeling, like an ephemeral poem recited by the universe, emerging momentarily amidst the chaos for us to share. 'Yada yada…' my lips were moving to a well-rehearsed story, but my attention was fixed in your stare.",
+        "The scene played out within the confines of my mind. I was transported some nights back: holding your gaze, somewhat shy, evoking an atmosphere of tension tender but wild. THUMP. Forces collided in time and space; a profoundly unexpected moment and unanticipated feeling, like an ephemeral poem recited by the universe, emerging momentarily amidst the chaos for us to share. 'Yada yada...' my lips were moving to a well-rehearsed story, but my attention was fixed in your stare.",
         "The sonata goes on. The jazz keeps on playing. The moon, perpetually fixed at its piercing exposure, smiling. Does a vision materialise when dreamed?"
       ],
       "links": [

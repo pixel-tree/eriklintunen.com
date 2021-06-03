@@ -2,6 +2,7 @@
 
 $black: rgb(10, 10, 10);
 $white: rgb(255, 255, 255);
+$gray: rgb(66, 66, 66);
 $shadow: rgb(221, 190, 220);
 
 $H: 'Source Code Pro', monospace;
@@ -39,7 +40,7 @@ body, #playground {
 }
 
 .initcursor::after {
-  content: '';
+  content: "";
   display: inline-block;
   margin-left: 3px;
   background-color: $white;
@@ -332,6 +333,34 @@ a:hover {
     color: $black;
 		padding-top: 10px;
   }
+}
+
+q {
+	quotes: none;
+	font-weight: 300;
+}
+
+.codeBlock {
+	max-width: 600px;
+	background-color: $gray;
+	opacity: 0.9;
+	border: 1.5px solid $black;
+	border-radius: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+code {
+	color: $white;
+	font-family: $H;
+	font-size: 12px;
+	text-align: left;
+}
+
+.indent {
+	margin-left: 12px;
 }
 
 /* Terminal */

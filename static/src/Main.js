@@ -5,7 +5,8 @@
 
 import '../styles.scss'
 
-import { Init, Bg, Socials, Footer, Nav, Media, sequencer } from './Utils'
+import { Media } from './Dev'
+import { Init, Bg, Socials, Footer, Nav, sequencer } from './Utils'
 
 /* Metadata */
 
@@ -15,7 +16,7 @@ let page = document.createElement('meta')
 page.id = 'page'
 document.head.appendChild(page)
 
-page.content = 'portfolio'  // Default load page
+page.content = 'portfolio'  // Default load page.
 
 /* Load data */
 
@@ -58,13 +59,19 @@ if (env === 'development') {
 
   console.log('Development mode.')
 
-  // to do: troubleshoot file loading for dev server.
+  // To do: troubleshoot file loading for dev server.
   const loader = new Media()
 
+  // Skip init and load default page.
   const $ = require('jquery')
   $('#playground').show()
   sequencer()
 
-} else { const init = new Init(document.body) }
+} else {
+
+  // Load production-specific init page.
+  const init = new Init(document.body)
+
+}
 
 export { data }

@@ -79,6 +79,16 @@ class Blog {
 
     }
 
+    // Select all <code>.
+    let code = document.querySelectorAll('code')
+    // Move selected elements into codeBlocks.
+    for (let i = 0; i < code.length; i++) {
+      let codeBlock = document.createElement('div')
+      codeBlock.classList.add('codeBlock')
+      code[i].parentNode.insertBefore(codeBlock, code[i])
+      codeBlock.appendChild(code[i])
+    }
+
   }
 }
 
