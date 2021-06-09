@@ -30,7 +30,7 @@ mail = Mail(app)
 # General.
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    return send_file("./static/index.html")
+    return send_file("./static/default.html")
 
 
 # Mail from contact form.

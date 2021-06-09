@@ -19,7 +19,7 @@
     "file-loader": "^6.2.0",
     "gl-mat4": "^1.2.0",
     "hsv2rgb": "^1.1.0",
-    "html-webpack-plugin": "^4.5.0",
+    "html-webpack-plugin": "^4.5.2",
     "imports-loader": "^1.2.0",
     "jquery": "^3.5.1",
     "jquery.terminal": "^2.20.1",
