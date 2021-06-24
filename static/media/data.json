@@ -303,7 +303,7 @@
       "title": "GAN Theft Auto",
       "body": [
         "[1]",
-        "Following up on my previous post about representations, this is pretty cool! In short, the authors train a neural network to predict new images based on previous frames and player (controller) input. It seems that the model is able to replicate physical phenomena (interactions between objects in the scene -- e.g., mountains getting closer, caustics, collisions). I feel like the result itself is somewhat expected (i.e., learning features of the physics engine), but what I find really interesting is that the <i>illusion</i> of being inside a 3D game environment is realistic."
+        "Following up on my previous post about representations, this is pretty cool! In short, the authors train a neural network to predict new images based on previous frames and player (controller) input. It seems that the model is able to replicate physical phenomena (interactions between objects in the scene -- e.g., mountains getting closer, caustics, collisions). I feel like the result itself is somewhat expected (i.e., learning features of the physics engine), but what I find really interesting is that the <i>illusion</i> of being inside a 3D game environment is eerily realistic."
       ],
       "links": [
         {
@@ -372,7 +372,7 @@
         "\\[\\mathbb{N} \\subseteq \\mathbb{Z} \\subseteq \\mathbb{Q} \\subseteq \\mathbb{R} \\subseteq \\mathbb{C}\\]",
         "From left to right: each set is a subset of the set that follows. The natural numbers, \\(\\mathbb{N}\\), consist of non-negative whole numbers (\\(0, 1, 2, \\dots\\)). The integers, \\(\\mathbb{Z}\\), include the naturals as well as the set of negative whole numbers (\\(\\dots, -2, -1, 0, 1, 2, \\dots\\)). The rational numbers, \\(\\mathbb{Q}\\), are numbers that can be represented using fractions, in the form \\(\\frac{p}{q}\\) where \\(p\\) and \\(q\\) are integers. The real numbers, \\(\\mathbb{R}\\), contain all of the aforementioned sets as well as those numbers which can't be represented by fractions -- i.e., they have non-repeating, infinite decimal expansions (e.g., \\(\\sqrt{2}, \\pi, \\text{e}\\)). The complex numbers, \\(\\mathbb{C}\\), are numbers expressed in the form \\(a + bi\\) where \\(a\\) and \\(b\\) are real numbers and the term in \\(i\\) is its imaginary component (where the imaginary unit \\(i\\) satisfies \\(i^2 = -1\\)). To visualise these sets, one can simply picture all but the complex numbers using the number line; and for the complex numbers, one can use the complex plane, where the horizontal axis represents its real component, and the vertical axis represents its imaginary component.",
         "{7}",
-        "Source: unknown.",
+        "Source: MathsIsFun.",
         "The sets \\(\\mathbb{N, Z, Q}\\) share a common feature: they are <i>countably</i> infinite. In mathematical terms, there exists a bijection (one-to-one correspondence) between each of these sets and the natural numbers -- we can pair each element with a unique natural number \\(0, 1, 2, \\dots\\). As for the set of real numbers, enter mathematician Georg Cantor who, in the late 1800s, blew up the world of mathematics with his discoveries.",
         "Real numbers are fascinating in their own right: some of them emerge under somewhat prosaic circumstances, yet have no rational representation. For instance, consider the unit square where all sides are of length 1. Hence, the length of its diagonal (line dividing the square into two triangles) is \\(\\sqrt{2}\\) (by Pythagoras' theorem \\(a^2 + b^2 = c^2\\), so \\(c = \\sqrt{1^2 + 1^2} = \\sqrt{2} = 1.414213\\dots\\)). I will omit proof of its irrationality, as it’s beside the point (and easy to find). But the story of its discovery is interesting. [11] writes:",
         "<q>\"It was a shocking discovery for the Pythagoreans, and indeed heretical in light of their quasi-religious number-mysticism beliefs, which aimed to comprehend all through proportion and ratio, taking numbers as the foundational substance of reality. According to legend, the man who made the discovery of incommensurability was drowned at sea, punished by the gods for revealing the secret knowledge of irrationality.\"</q>",
@@ -551,7 +551,7 @@
     },
     {
       "date": "310521",
-      "title": "Starting a new week be like",
+      "title": "I love my life but sometimes mornings be like",
       "body": [
         "{1}",
         "Source: unknown."
