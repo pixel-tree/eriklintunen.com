@@ -16,7 +16,7 @@
     }
   ],
 
-  "footer": "© 2021 pixel-tree MIT",
+  "footer": "© 2021 pixel-tree",
 
   "about": [
     "Good dawning to thee, friend. I'm an artist and creative technologist (and secretly an aspiring mathematician) whose work is grounded in philosophy, new media research and information experience design. I like to learn new things -- particularly, I'm fascinated with the theory of knowledge, interpretability of statistical models, and social complexity. This site is a scrapbook of sorts, where I attempt to capture fragments of my (somewhat restless) mind in flux.",
@@ -33,11 +33,11 @@
       "id": "Cloudy Logic",
       "body": [
         "{1}",
-        "[1] is a piece of philosophical writing and a multimedia artwork hosted online, made up of several narratives that broadly contemplate representations and the nature of knowledge.",
+        "[1] is a piece of philosophical writing and an online artwork, made up of several narratives that broadly contemplate the nature of knowledge in the age of AI.",
         "{2}",
-        "It is inspired by an [2] of the same name, in which parallels are made between machine learning systems and astrological forecasting. That is, pseudo-rationality, where superstitions are presented in empirical terms to make them seem more credible.",
+        "It is inspired by an [2] of the same name, in which parallels are made between machine learning systems and astrological forecasting -- that is, pseudo-rationality, where superstitions are presented in empirical terms to make them appear more credible.",
         "{3}",
-        "More information [3]. Developed as part of my MA studies and exhibited online. Featured in two RCA2020 collections: [4] and [5]."
+        "Developed as part of my MA studies and exhibited online (2020-2021). Featured in two RCA2020 collections: [3] and [4]."
       ],
       "media": [
         {
@@ -56,9 +56,6 @@
         },
         {
           "article": "https://thenewinquiry.com/cloudy-logic/"
-        },
-        {
-          "here": "https://cloudylogic.space/about"
         },
         {
           "Humanistic Technologists Design for the Now": "https://2020.rca.ac.uk/collections/humanistic-technologists-design-for-the-now"
@@ -743,11 +740,14 @@
       "date": "161020",
       "title": "About Cloudy Logic",
       "body": [
-        "Information on my recent project [1]."
+        "Information on my recent project [1]. (EDIT: artwork offline as of July 2021; information about the project archived on the [2] site.)"
       ],
       "links": [
         {
           "Cloudy Logic": "https://cloudylogic.space/about"
+        },
+        {
+          "RCA2020": "https://2020.rca.ac.uk/students/erik-lintunen"
         }
       ],
       "media": [
@@ -796,7 +796,8 @@
       "date": "230720",
       "title": "RCA2020",
       "body": [
-        "[1] is now online as part of [2]. I'm honoured to have my project featured in two guest-curated collections: [3] and [4]. Also visit our own show site [5]."
+        "[1] is now online as part of [2]. I'm honoured to have my project featured in two guest-curated collections: [3] and [4]. Also visit our own show site [5].",
+        "(EDIT: artwork offline as of July 2021. Please leave a message if you'd like access to the work.)"
       ],
       "links": [
         {
