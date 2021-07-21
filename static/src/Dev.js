@@ -38,6 +38,7 @@ class Media {
     require('../media/files/lakes.png')
 
     // Blog.
+    require('../media/files/sylvanas.png')
     require('../media/files/waveformspectral.png')
     require('../media/files/midi.png')
     require('../media/files/imageArRGBSplit.png')
@@ -80,7 +81,7 @@ class Media {
     require('../media/files/various-8.png')
     require('../media/files/various-9.png')
     require('../media/files/various-10.png')
-    
+
   }
 }
 

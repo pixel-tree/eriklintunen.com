@@ -296,10 +296,29 @@
 
   "blog": [
     {
+      "date": "210721",
+      "title": "Sike!",
+      "body": [
+        "{1}",
+        "Source: unknown.",
+        "[1]."
+      ],
+      "links": [
+        {
+          "Clip for context": "https://www.twitch.tv/echo_esports/clip/SucculentTenuousJayKippa-gVgKZpmHDicUkZCl"
+        }
+      ],
+      "media": [
+        {
+          "Sylvanas SoD": "./media/files/sylvanas.png"
+        }
+      ]
+    },
+    {
       "date": "240621",
       "title": "GAN Theft Auto",
       "body": [
-        "[1]",
+        "[1].",
         "Following up on my previous post about representations, this is pretty cool! In short, the authors train a neural network to predict new images based on previous frames and player (controller) input. It seems that the model is able to replicate physical phenomena (interactions between objects in the scene -- e.g., mountains getting closer, caustics, collisions). I feel like the result itself is somewhat expected (i.e., learning features of the physics engine), but what I find really interesting is that the <i>illusion</i> of being inside a 3D game environment is eerily realistic."
       ],
       "links": [
